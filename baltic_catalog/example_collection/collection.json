@@ -8,7 +8,7 @@
       "rel": "root",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Template Catalog"
+      "title": "Baltic GTIF Catalog"
     },
     {
       "rel": "child",
@@ -63,7 +63,7 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Template Catalog"
+      "title": "Baltic GTIF Catalog"
     }
   ],
   "themes": [
@@ -107,7 +107,7 @@
       "interval": [
         [
           "1970-01-01T00:00:00Z",
-          "2025-04-17T12:28:30.992047Z"
+          "2025-04-18T14:24:43.680834Z"
         ]
       ]
     }
