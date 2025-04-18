@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "example_collection",
+  "id": "Flooding Austria",
   "stac_version": "1.1.0",
-  "description": "This can be **markdown** or a reference to a markdown file",
+  "description": "##Interesting title",
   "links": [
     {
       "rel": "root",
@@ -12,31 +12,23 @@
     },
     {
       "rel": "child",
-      "href": "./example_collection/collection.json",
+      "href": "./Flooding Austria/collection.json",
       "type": "application/json",
-      "title": "Example Collection",
-      "endpointtype": "WMS",
-      "code": "EX1",
-      "id": "example_collection",
+      "title": "Flooding Austria",
+      "endpointtype": "COG source",
+      "code": "flooding_capability_aut",
+      "id": "Flooding Austria",
       "themes": [
-        "example"
+        "Austria",
+        "2024",
+        "September"
       ],
-      "tags": [
-        "example tag"
-      ],
-      "agency": [
-        "Example agency"
-      ],
-      "subcode": "EX1",
-      "sensor": [
-        "Sensorname"
-      ],
-      "satellite": [
-        "Satellitename"
-      ],
-      "insituSources": [
-        "Other insitu data"
-      ]
+      "subcode": "flooding_capability_aut",
+      "collection_group": "Water",
+      "eodash:mapProjection": {
+        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
+        "name": "EPSG:3035"
+      }
     },
     {
       "rel": "xyz",
@@ -67,47 +59,39 @@
     }
   ],
   "themes": [
-    "example"
+    "Austria",
+    "2024",
+    "September"
   ],
-  "tags": [
-    "example tag"
-  ],
-  "agency": [
-    "Example agency"
-  ],
-  "subcode": "EX1",
-  "sensor": [
-    "Sensorname"
-  ],
-  "satellite": [
-    "Satellitename"
-  ],
-  "insituSources": [
-    "Other insitu data"
-  ],
-  "title": "Example Collection",
+  "subcode": "flooding_capability_aut",
+  "collection_group": "Water",
+  "eodash:mapProjection": {
+    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
+    "name": "EPSG:3035"
+  },
+  "title": "Flooding Austria",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180,
-          -85,
-          180,
-          85
+          9.415283,
+          46.346928,
+          17.094727,
+          49.016257
         ],
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          9.415283,
+          46.346928,
+          17.094727,
+          49.016257
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "1970-01-01T00:00:00Z",
-          "2025-04-18T14:28:17.733665Z"
+          "2024-09-11T00:00:00Z",
+          "2024-09-11T00:00:00Z"
         ]
       ]
     }
@@ -115,16 +99,12 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "EX1"
+      "flooding_capability_aut"
     ],
     "themes": [
-      "example"
-    ],
-    "satellite": [
-      "Satellitename"
-    ],
-    "sensor": [
-      "Sensorname"
+      "2024",
+      "September",
+      "Austria"
     ]
   }
 }
