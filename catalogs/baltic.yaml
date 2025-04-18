@@ -1,4 +1,4 @@
-id: "baltic_catalog"
+id: "baltic"
 title: "Baltic GTIF Catalog"
 description: "This catalog definition is done for the Baltic GTIF project."
 endpoint: "https://baltic-gtif.github.io/baltic-gtif/baltic-catalog/"
