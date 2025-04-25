@@ -45,7 +45,7 @@
       "title": "Soil Moisture 09 Austria"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/organization/assets-repo/main//https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png",
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_at.png",
   "themes": [
     "Flooding"
   ],
@@ -76,7 +76,7 @@
   "license": "other",
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png",
+      "href": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_at.png",
       "type": "image/png",
       "roles": [
         "thumbnail"
