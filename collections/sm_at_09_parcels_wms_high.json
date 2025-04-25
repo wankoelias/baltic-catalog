@@ -6,7 +6,7 @@
     "Themes": [
       "Flooding"
     ],
-    "Image": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png",
+    "Image": "assets/sm_at.png",
     "Resources": [
       {
         "EndPoint": "https://server1.landimage.info/geoserver/wms",
