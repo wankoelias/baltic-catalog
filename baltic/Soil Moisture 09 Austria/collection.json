@@ -77,6 +77,7 @@
       "title": "Baltic GTIF Catalog"
     }
   ],
+  "thumbnail": "https://raw.githubusercontent.com/organization/assets-repo/main//https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png",
   "subcode": "sm_at_09_high_medium_low",
   "eodash:mapProjection": {
     "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
@@ -131,5 +132,14 @@
     "themes": [
       "Flooding"
     ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }
