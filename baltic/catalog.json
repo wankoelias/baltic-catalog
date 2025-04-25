@@ -12,18 +12,53 @@
     },
     {
       "rel": "child",
-      "href": "./Flooding Austria/collection.json",
+      "href": "./Soil Moisture 04 Lithuania/collection.json",
       "type": "application/json",
-      "title": "Flooding Austria",
-      "code": "flooding_capability_aut",
-      "id": "Flooding Austria",
+      "title": "Soil Moisture 04 Lithuania",
+      "code": "sm_lt_04_high_medium_low",
+      "id": "Soil Moisture 04 Lithuania",
+      "subcode": "sm_lt_04_high_medium_low",
       "themes": [
-        "Austria",
-        "2024",
-        "September"
+        "Flooding"
       ],
-      "subcode": "flooding_capability_aut",
-      "collection_group": "Water",
+      "satellite": [
+        "Satellitename"
+      ],
+      "sensor": [
+        "Sensorname"
+      ],
+      "eodash:mapProjection": {
+        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
+        "name": "EPSG:3035"
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./Lodging 07 Lithuania/collection.json",
+      "type": "application/json",
+      "title": "Lodging 07 Lithuania",
+      "code": "ld_lt_07",
+      "id": "Lodging 07 Lithuania",
+      "subcode": "ld_lt_07",
+      "themes": [
+        "Crops Lodging"
+      ],
+      "eodash:mapProjection": {
+        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
+        "name": "EPSG:3035"
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./Soil Moisture 09 Austria/collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture 09 Austria",
+      "code": "sm_at_09_high_medium_low",
+      "id": "Soil Moisture 09 Austria",
+      "subcode": "sm_at_09_high_medium_low",
+      "themes": [
+        "Flooding"
+      ],
       "eodash:mapProjection": {
         "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
         "name": "EPSG:3035"

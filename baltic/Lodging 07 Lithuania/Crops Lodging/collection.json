@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "Flooding Austria",
+  "id": "Crops Lodging",
   "stac_version": "1.1.0",
-  "description": "##Interesting title",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -12,61 +12,56 @@
     },
     {
       "rel": "item",
-      "href": "./Flooding Austria/2024/2024-09-11T00:00:00Z.json",
+      "href": "./Crops Lodging/2024/2024-06-25T00:00:00Z.json",
       "type": "application/geo+json",
-      "datetime": "2024-09-11T00:00:00Z",
+      "datetime": "2024-06-25T00:00:00Z",
       "assets": [
-        "https://obs.eu-nl.otc.t-systems.com/gtif-data-geomatrix-flooding/output/AT_2024_09_d2_flooding_4564656_2742407_cog.tif"
+        "https://obs.eu-nl.otc.t-systems.com/gtif-data-geomatrix-lodging/output/LIT_2024_06_CROPS_lodging_5201873_3657058_cog.tif"
       ]
     },
     {
       "rel": "style",
-      "href": "https://api.npoint.io/85c43058073e5051f880",
+      "href": "https://api.npoint.io/94d6c5c498a0ac16563f",
       "type": "text/cog-styles",
       "asset:keys": [
-        "AT d2"
+        "01"
       ]
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Flooding Austria"
+      "title": "Lodging 07 Lithuania"
     }
   ],
   "themes": [
-    "Austria",
-    "2024",
-    "September"
+    "Crops Lodging"
   ],
-  "subcode": "flooding_capability_aut",
-  "collection_group": "Water",
+  "subcode": "ld_06_lt_raster",
+  "collection_group": "Crops",
   "eodash:mapProjection": {
     "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
     "name": "EPSG:3035"
   },
-  "eodash:proj4_def": {
-    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
-    "name": "EPSG:3035"
-  },
+  "proj:epsg": 3035,
   "endpointtype": "COG source",
-  "title": "Flooding Austria",
+  "title": "Crops Lodging",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          9.415283,
-          46.346928,
-          17.094727,
-          49.016257
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2024-09-11T00:00:00Z",
-          "2024-09-11T00:00:00Z"
+          "2024-06-25T00:00:00Z",
+          "2024-06-25T00:00:00Z"
         ]
       ]
     }
