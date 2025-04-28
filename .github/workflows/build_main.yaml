@@ -31,24 +31,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install json2yaml
           pip install -r requirements.txt
-      - name: Convert JSON to YAML
-        run: |
-          mkdir -p yaml_collections
-          for file in collections/*.json; do
-            json2yaml "$file" > "yaml_collections/$(basename "$file" .json).yaml"
-          done
-          mkdir -p yaml_indicators
-          for file in indicators/*.json; do
-            json2yaml "$file" > "yaml_indicators/$(basename "$file" .json).yaml"
-          done
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: eodash_catalog --collectionspath yaml_collections --indicatorspath yaml_indicators
+        run: eodash_catalog
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
