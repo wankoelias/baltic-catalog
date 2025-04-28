@@ -37,8 +37,8 @@
       "subcode": "ld_06_lt_raster",
       "collection_group": "Crops",
       "eodash:mapProjection": {
-        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
-        "name": "EPSG:3035"
+        "name": "EPSG:3035",
+        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
       }
     },
     {
@@ -72,8 +72,8 @@
   "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/ld_lt.png",
   "subcode": "ld_lt_07",
   "eodash:mapProjection": {
-    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
-    "name": "EPSG:3035"
+    "name": "EPSG:3035",
+    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
   },
   "title": "Lodging 07 Lithuania",
   "extent": {
@@ -111,8 +111,8 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "ld_06_lt_raster",
-      "ld_lt_07_wms"
+      "ld_lt_07_wms",
+      "ld_06_lt_raster"
     ],
     "themes": [
       "Crops Lodging"

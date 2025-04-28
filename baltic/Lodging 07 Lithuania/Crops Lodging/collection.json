@@ -41,10 +41,23 @@
   "subcode": "ld_06_lt_raster",
   "collection_group": "Crops",
   "eodash:mapProjection": {
-    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs",
-    "name": "EPSG:3035"
+    "name": "EPSG:3035",
+    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
   },
   "eox:colorlegend": {
+    "title": "Lodging legend",
+    "range": [
+      "#3c8bc0",
+      "#6aa3d8",
+      "#69c0d8",
+      "#1be5b5",
+      "#74fe5d",
+      "#c9ef34",
+      "#fbb938",
+      "#c92903",
+      "#7a0403",
+      "#020101"
+    ],
     "domain": [
       "0 - 5",
       "5 - 10",
@@ -58,21 +71,8 @@
       "80 - 100",
       "NA"
     ],
-    "markType": "circle",
-    "range": [
-      "#3c8bc0",
-      "#6aa3d8",
-      "#69c0d8",
-      "#1be5b5",
-      "#74fe5d",
-      "#c9ef34",
-      "#fbb938",
-      "#c92903",
-      "#7a0403",
-      "#020101"
-    ],
     "scaleType": "categorical",
-    "title": "Lodging legend"
+    "markType": "circle"
   },
   "proj:epsg": 3035,
   "endpointtype": "COG source",
