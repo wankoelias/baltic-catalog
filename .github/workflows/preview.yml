@@ -10,7 +10,6 @@ on:
       - opened
       - reopened
       - synchronize
-      - closed # pr-preview-action will do cleanup here, but build steps can be skipped
 
 # do not allow running multiple of pipelines for this PR in parallel
 concurrency: preview-${{ github.ref }}
@@ -29,8 +28,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - if: github.event.action != 'closed'
-        name: Install dependencies
+      - name: Install dependencies
         run: |
           pip install -U pip
           pip install -r requirements.txt
@@ -43,13 +41,13 @@ jobs:
       - name: List all changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: python .github/update_catalog.py
+        run: python .github/update_catalog_last_changes_pr.py
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: eodash_catalog --catalogspath catalogs --collectionspath yaml_collections --indicatorspath yaml_indicators
+        run: eodash_catalog
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
