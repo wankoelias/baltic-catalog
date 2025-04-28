@@ -1,0 +1,86 @@
+{
+  "type": "Collection",
+  "id": "Soil Moisture high - parcels",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./Soil Moisture high - parcels/2024/2024-09-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Soil Moisture high - parcels/2024/2024-09-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-30T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/wms",
+      "type": "image/png",
+      "title": "Soil Moisture high - parcels",
+      "wms:layers": [
+        "GTIFBaltic:AUT_SM_2024_09_1120_Q1"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:styles": [],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "proj:epsg": 3857
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture 09 Austria"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_at.png",
+  "themes": [
+    "Flooding"
+  ],
+  "subcode": "sm_at_09_parcels_wms_high",
+  "proj:epsg": 3857,
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "Soil Moisture high - parcels",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.415283,
+          46.346928,
+          17.094727,
+          49.016257
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-09-01T00:00:00Z",
+          "2024-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_at.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

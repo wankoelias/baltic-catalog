@@ -1,0 +1,110 @@
+{
+  "type": "Collection",
+  "id": "Crops Lodging",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./Crops Lodging/2024/2024-06-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-25T00:00:00Z",
+      "assets": [
+        "https://obs.eu-nl.otc.t-systems.com/gtif-data-geomatrix-lodging/output/LIT_2024_06_CROPS_lodging_5201873_3657058_cog.tif"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://api.npoint.io/94d6c5c498a0ac16563f",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "01"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lodging 07 Lithuania"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/ld_lt.png",
+  "themes": [
+    "Crops Lodging"
+  ],
+  "subcode": "ld_06_lt_raster",
+  "collection_group": "Crops",
+  "eodash:mapProjection": {
+    "name": "EPSG:3035",
+    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
+  },
+  "eox:colorlegend": {
+    "title": "Lodging legend",
+    "range": [
+      "#3c8bc0",
+      "#6aa3d8",
+      "#69c0d8",
+      "#1be5b5",
+      "#74fe5d",
+      "#c9ef34",
+      "#fbb938",
+      "#c92903",
+      "#7a0403",
+      "#020101"
+    ],
+    "domain": [
+      "0 - 5",
+      "5 - 10",
+      "10 - 15",
+      "15 - 20",
+      "20 - 25",
+      "25 - 30",
+      "30 - 40",
+      "40 - 60",
+      "60 - 80",
+      "80 - 100",
+      "NA"
+    ],
+    "scaleType": "categorical",
+    "markType": "circle"
+  },
+  "proj:epsg": 3035,
+  "endpointtype": "COG source",
+  "title": "Crops Lodging",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-06-25T00:00:00Z",
+          "2024-06-25T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/ld_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
