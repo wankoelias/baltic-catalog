@@ -21,6 +21,7 @@ jobs:
       contents: write
       pages: write
       pull-requests: write
+      packages: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,14 +29,6 @@ jobs:
           submodules: 'true'
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Install dependencies
-        run: |
-          pip install -U pip
-          pip install -r requirements.txt
       - name: changed-files
         id: changed-files
         uses: tj-actions/changed-files@v45
@@ -46,12 +39,14 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: python .github/update_catalog_last_changes_pr.py
-      - name: Build
+      - name: Build catalog
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: eodash_catalog
+        run: |
+          docker pull ghcr.io/eodash/eodash_catalog:latest
+          docker run -v "$PWD:/workspace" -w "/workspace" ghcr.io/eodash/eodash_catalog:latest eodash_catalog
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
