@@ -24,7 +24,6 @@
       "wms:dimensions": {
         "TIME": "2024-06-25T00:00:00Z"
       },
-      "wms:styles": [],
       "wms:tilesize": 256,
       "wms:version": "1.1.1",
       "proj:epsg": 3857
