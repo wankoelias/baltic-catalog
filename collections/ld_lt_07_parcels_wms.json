@@ -1,40 +1,49 @@
 {
-  "Name": "crops_lodging_parcels",
-  "Title": "Crops Lodging - parcels",
-  "EodashIdentifier": "ld_lt_07_wms",
-  "Description": "",
-  "Themes": [
-    "Crops Lodging"
-  ],
-  "Resources": [
-    {
-      "EndPoint": "https://server1.landimage.info/geoserver/wms",
-      "Name": "WMS",
-      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
-      "Type": "Time",
-      "TileSize": 256,
-      "Version": "1.1.0"
-    }
-  ],
-  "Process": {
-    "Name": "Attributes",
-    "JsonForm": "assets/inputform_lodging.json",
-    "EndPoints": [
-      {
-        "Identifier": "",
-        "Url": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
-        "Type": "application/geo+json"
-      }
+    "Name": "Crops Lodging - parcels",
+    "Title": "Crops Lodging - parcels",
+    "EodashIdentifier": "ld_lt_07_wms",
+    "Description": "",
+    "Themes": [
+      "Crops Lodging"
     ],
-    "VegaDefinition": "assets/vegachart_lodging.json"
-  },
-  "Colorlegend": {
-    "title": "",
-    "range": [],
-    "domain": [],
-    "tickFormat": "",
-    "tickValues": [],
-    "markType": "rect",
-    "scaleType": "continuous"
+    "Process": {
+      "Name": "WMS GetFeatureInfo",
+      "JsonForm": "assets/inputform_lodging.json",
+      "VegaDefinition": "assets/vegachart_lodging.json",
+      "EndPoints": [
+        {
+          "Identifier": "",
+          "Url": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
+          "Type": "application/json"
+      }
+    ]
+
+
+    },
+    "Resources": [
+      {
+        "EndPoint": "https://server1.landimage.info/geoserver/wms",
+        "DataProjection": 3857,
+        "Name": "WMS",
+        "Type": "OverwriteTimes",
+        "MediaType": "image/png",
+        "Styles": [],
+        "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
+        "OverwriteBBox": [
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
+        ],
+        "TileSize": 256,
+        "Version": "1.1.1",
+        "DateTimeInterval": {
+          "Start": "2024-06-25T00:00:00Z",
+          "End": "2024-07-15:00:00Z",
+          "Timedelta": {
+            "days": 20
+          }
+        }
+      }
+    ]
   }
-}
