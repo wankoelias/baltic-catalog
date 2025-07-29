@@ -9,9 +9,8 @@
   "Resources": [
     {
       "EndPoint": "https://server1.landimage.info/geoserver/wms",
-      "Name": "Sentinel Hub WMS",
-      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
-      "CollectionId": ""
+      "Name": "WMS",
+      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07"
     }
   ],
   "Process": {
