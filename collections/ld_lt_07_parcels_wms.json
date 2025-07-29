@@ -1,49 +1,30 @@
 {
-    "Name": "Crops Lodging - parcels",
-    "Title": "Crops Lodging - parcels",
-    "EodashIdentifier": "ld_lt_07_wms",
-    "Description": "",
-    "Themes": [
-      "Crops Lodging"
-    ],
-    "Process": {
-      "Name": "WMS GetFeatureInfo",
-      "JsonForm": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/inputform_lodging.json",
-      "VegaDefinition": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/vegachart_lodging.json",
-      "EndPoints": [
-        {
-          "Identifier": "",
-          "Url": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
-          "Type": "application/json"
-      }
-    ]
-
-
-    },
-    "Resources": [
+  "Name": "crops_odging_parcels",
+  "Title": "Crops Lodging - parcels",
+  "EodashIdentifier": "ld_lt_07_wms",
+  "Description": "",
+  "Themes": [
+    "Crops Lodging"
+  ],
+  "Process": {
+    "Name": "WMS GetFeatureInfo",
+    "JsonForm": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/inputform_lodging.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/vegachart_lodging.json",
+    "EndPoints": [
       {
-        "EndPoint": "https://server1.landimage.info/geoserver/wms",
-        "DataProjection": 3857,
-        "Name": "WMS",
-        "Type": "OverwriteTimes",
-        "MediaType": "image/png",
-        "Styles": [],
-        "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
-        "OverwriteBBox": [
-          22.64524,
-          54.94676,
-          23.02416,
-          55.30585
-        ],
-        "TileSize": 256,
-        "Version": "1.1.1",
-        "DateTimeInterval": {
-          "Start": "2024-06-25T00:00:00Z",
-          "End": "2024-07-15:00:00Z",
-          "Timedelta": {
-            "days": 20
-          }
-        }
+        "Identifier": "",
+        "Url": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
+        "Type": "application/json"
       }
     ]
-  }
+  },
+  "Resources": [
+    {
+      "EndPoint": "https://server1.landimage.info/geoserver/wms",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
+      "CollectionId": ""
+    }
+  ]
+}
