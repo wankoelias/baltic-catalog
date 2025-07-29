@@ -15,7 +15,7 @@
   ],
   "Process": {
     "Name": "Attributes",
-    "JsonForm": "../assets/inputform_lodging.json",
+    "JsonForm": "assets/inputform_lodging.json",
     "EndPoints": [
       {
         "Identifier": "",
@@ -23,6 +23,6 @@
         "Type": "application/geo+json"
       }
     ],
-    "VegaDefinition": "../assets/vegachart_lodging.json"
+    "VegaDefinition": "assets/vegachart_lodging.json"
   }
 }
