@@ -8,8 +8,8 @@
     ],
     "Process": {
       "Name": "WMS GetFeatureInfo",
-      "JsonForm": "assets/inputform_lodging.json",
-      "VegaDefinition": "assets/vegachart_lodging.json",
+      "JsonForm": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/inputform_lodging.json",
+      "VegaDefinition": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/vegachart_lodging.json",
       "EndPoints": [
         {
           "Identifier": "",
