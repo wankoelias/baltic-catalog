@@ -10,7 +10,10 @@
     {
       "EndPoint": "https://server1.landimage.info/geoserver/wms",
       "Name": "WMS",
-      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07"
+      "LayerId": "GTIFBaltic:LIT_2024_crops_lodging_07",
+      "Type": "Time",
+      "TileSize": 256,
+      "Version": "1.1.0"
     }
   ],
   "Process": {
@@ -24,5 +27,14 @@
       }
     ],
     "VegaDefinition": "assets/vegachart_lodging.json"
+  },
+  "Colorlegend": {
+    "title": "",
+    "range": [],
+    "domain": [],
+    "tickFormat": "",
+    "tickValues": [],
+    "markType": "rect",
+    "scaleType": "continuous"
   }
 }
