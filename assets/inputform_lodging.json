@@ -1,0 +1,19 @@
+{
+"options": {
+  "execute": true
+  },
+  "type": "object",
+  "properties": {
+    "point": {
+      "title": "Single point",
+      "type": "array",
+      "format": "point",
+      "options": {
+            "drawtools": {
+                "for": "eox-map#main",
+                "projection": "EPSG:3857"
+            }
+        }
+    }
+  }
+}

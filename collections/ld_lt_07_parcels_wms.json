@@ -6,6 +6,20 @@
     "Themes": [
       "Crops Lodging"
     ],
+    "Process": {
+      "Name": "WMS GetFeatureInfo",
+      "JsonForm": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/inputform_lodging.json",
+      "VegaDefinition": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/vegachart_lodging.json",
+      "EndPoints": [
+        {
+          "Identifier": "",
+          "Url": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
+          "Type": "application/json"
+      }
+    ]
+
+
+    },
     "Resources": [
       {
         "EndPoint": "https://server1.landimage.info/geoserver/wms",
