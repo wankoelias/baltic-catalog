@@ -215,7 +215,7 @@
       "title": "Soil Moisture 04 Lithuania"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_lt.png",
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//assets/sm_lt.png",
   "themes": [
     "Flooding"
   ],
@@ -261,7 +261,7 @@
   "license": "other",
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main//assets/sm_lt.png",
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//assets/sm_lt.png",
       "type": "image/png",
       "roles": [
         "thumbnail"
