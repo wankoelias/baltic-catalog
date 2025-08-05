@@ -9,6 +9,18 @@
         "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
     },
     "Collections": ["ld_lt_07_parcels_wms", "ld_lt_07_raster"],
-    "Image": "thumbnails/ld_lt.png"
+    "Image": "thumbnails/ld_lt.png",
+    "Process": {
+      "Name": "WMS GetFeatureInfo",
+      "JsonForm": "http://localhost:9091/inputform.json",
+      "VegaDefinition": "http://localhost:9091/vegachart.json",
+      "EndPoints": [
+        {
+          "Identifier": "",
+          "Url": "http://localhost:5001/proxy?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
+          "Type": "application/json"
+      }
+    ]
+    }
 }
 
