@@ -6,7 +6,6 @@
     "Themes": [
       "Flooding"
     ],
-    "Image": "assets/sm_at.png",
     "Resources": [
       {
         "EndPoint": "https://server1.landimage.info/geoserver/wms",
