@@ -6,6 +6,7 @@
     "Themes": [
       "Crops Lodging"
     ],
+    "Image": "thumbnails/ld_lt.png",
     "Resources": [
       {
         "EndPoint": "https://server1.landimage.info/geoserver/wms",
