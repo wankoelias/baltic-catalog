@@ -6,6 +6,7 @@
     "Themes": [
       "Crops Lodging"
     ],
+    "Image": "thumbnails/ld_lt.png"
     "Process": {
       "Name": "WMS GetFeatureInfo",
       "JsonForm": "https://raw.githubusercontent.com/wankoelias/baltic-catalog/refs/heads/wankoelias/test-getfeatureinfo-process/assets/inputform_lodging.json",
