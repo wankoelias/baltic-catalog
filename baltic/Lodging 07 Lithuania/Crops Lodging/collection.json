@@ -34,7 +34,6 @@
       "title": "Lodging 07 Lithuania"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/ld_lt.png",
   "themes": [
     "Crops Lodging"
   ],
@@ -97,14 +96,5 @@
       ]
     }
   },
-  "license": "other",
-  "assets": {
-    "thumbnail": {
-      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/ld_lt.png",
-      "type": "image/png",
-      "roles": [
-        "thumbnail"
-      ]
-    }
-  }
+  "license": "other"
 }
