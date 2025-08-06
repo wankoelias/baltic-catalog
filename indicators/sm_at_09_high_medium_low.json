@@ -17,6 +17,5 @@
       "sm_at_09_parcels_wms_high",
       "sm_at_09_parcels_wms_medium",
       "sm_at_09_parcels_wms_low"
-    ],
-    "Image": "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_at.png"
+    ]
   }
