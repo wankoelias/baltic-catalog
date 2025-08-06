@@ -25,7 +25,7 @@
     "Agency": [
       "Example agency"
     ],
-    "Image": "assets/sm_lt.png",
+    "Image": "thumbnails/sm_lt.png",
     "Resources": [
       {
         "EndPoint": "https://server1.landimage.info/geoserver/gwc/service/wms",
