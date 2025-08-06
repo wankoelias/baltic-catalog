@@ -28,7 +28,7 @@
         "Sensorname"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//assets/sm_lt.png"
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
       ],
       "eodash:mapProjection": {
         "name": "EPSG:3035",
