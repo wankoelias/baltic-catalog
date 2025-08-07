@@ -31,5 +31,6 @@
           }
         }
       }
-    ]
+    ],
+    "Colorlegend": "legends/waterlogging.json"
   }
