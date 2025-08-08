@@ -234,6 +234,7 @@
   "insituSources": [
     "Other insitu data"
   ],
+  "eox:colorlegend": "legends/waterlogging.json",
   "proj:epsg": 3857,
   "endpointtype": "WMS_OverwriteTimes",
   "title": "Soil Moisture medium - parcels",

@@ -48,6 +48,7 @@
     "Flooding"
   ],
   "subcode": "sm_at_09_parcels_wms_medium",
+  "eox:colorlegend": "legends/waterlogging.json",
   "proj:epsg": 3857,
   "endpointtype": "WMS_OverwriteTimes",
   "title": "Soil Moisture medium - parcels",
