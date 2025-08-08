@@ -33,5 +33,5 @@
         }
       }
     ],
-      "Colorlegend": "legends/waterlogging.json"
+      "Colorlegend": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/legends/waterlogging.json"
   }
