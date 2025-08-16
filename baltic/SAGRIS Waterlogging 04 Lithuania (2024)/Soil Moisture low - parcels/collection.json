@@ -212,7 +212,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Soil Moisture 04 Lithuania"
+      "title": "SAGRIS Waterlogging 04 Lithuania (2024)"
     }
   ],
   "themes": [
@@ -234,7 +234,27 @@
   "insituSources": [
     "Other insitu data"
   ],
-  "eox:colorlegend": "legends/waterlogging.json",
+  "eox:colorlegend": {
+    "title": "Waterlogging",
+    "range": [
+      "#ffffff",
+      "#b8ebff",
+      "#88c3ff",
+      "#74abe2",
+      "#3281d1",
+      "#00509f"
+    ],
+    "domain": [
+      "0",
+      "5",
+      "10",
+      "50",
+      "100",
+      "200"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
   "proj:epsg": 3857,
   "endpointtype": "WMS_OverwriteTimes",
   "title": "Soil Moisture low - parcels",

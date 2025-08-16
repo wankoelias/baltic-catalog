@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "Soil Moisture low - parcels",
+  "id": "Soil Moisture medium - parcels",
   "stac_version": "1.1.0",
   "description": "",
   "links": [
@@ -12,13 +12,13 @@
     },
     {
       "rel": "item",
-      "href": "./Soil Moisture low - parcels/2024/2024-09-01T00:00:00Z.json",
+      "href": "./Soil Moisture medium - parcels/2024/2024-09-01T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2024-09-01T00:00:00Z"
     },
     {
       "rel": "item",
-      "href": "./Soil Moisture low - parcels/2024/2024-09-30T00:00:00Z.json",
+      "href": "./Soil Moisture medium - parcels/2024/2024-09-30T00:00:00Z.json",
       "type": "application/geo+json",
       "datetime": "2024-09-30T00:00:00Z"
     },
@@ -26,9 +26,9 @@
       "rel": "wms",
       "href": "https://server1.landimage.info/geoserver/wms",
       "type": "image/png",
-      "title": "Soil Moisture low - parcels",
+      "title": "Soil Moisture medium - parcels",
       "wms:layers": [
-        "GTIFBaltic:AUT_SM_2024_09_1120_Q3"
+        "GTIFBaltic:AUT_SM_2024_09_1120_Q2"
       ],
       "role": [
         "data"
@@ -41,17 +41,37 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Soil Moisture 09 Austria"
+      "title": "SAGRIS Waterlogging 09 Austria (2024)"
     }
   ],
   "themes": [
     "Flooding"
   ],
-  "subcode": "sm_at_09_parcels_wms_low",
-  "eox:colorlegend": "legends/waterlogging.json",
+  "subcode": "sm_at_09_parcels_wms_medium",
+  "eox:colorlegend": {
+    "title": "Waterlogging",
+    "range": [
+      "#ffffff",
+      "#b8ebff",
+      "#88c3ff",
+      "#74abe2",
+      "#3281d1",
+      "#00509f"
+    ],
+    "domain": [
+      "0",
+      "5",
+      "10",
+      "50",
+      "100",
+      "200"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
   "proj:epsg": 3857,
   "endpointtype": "WMS_OverwriteTimes",
-  "title": "Soil Moisture low - parcels",
+  "title": "Soil Moisture medium - parcels",
   "extent": {
     "spatial": {
       "bbox": [

@@ -41,7 +41,7 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Soil Moisture 09 Austria"
+      "title": "SAGRIS Waterlogging 09 Austria (2024)"
     }
   ],
   "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_at.png",
@@ -49,7 +49,27 @@
     "Flooding"
   ],
   "subcode": "sm_at_09_parcels_wms_high",
-  "eox:colorlegend": "legends/waterlogging.json",
+  "eox:colorlegend": {
+    "title": "Waterlogging",
+    "range": [
+      "#ffffff",
+      "#b8ebff",
+      "#88c3ff",
+      "#74abe2",
+      "#3281d1",
+      "#00509f"
+    ],
+    "domain": [
+      "0",
+      "5",
+      "10",
+      "50",
+      "100",
+      "200"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
   "proj:epsg": 3857,
   "endpointtype": "WMS_OverwriteTimes",
   "title": "Soil Moisture high - parcels",
