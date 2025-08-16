@@ -1,3 +1,22 @@
 {
-  "Name": "SOIC Lithuania"
+  "Name": "soic_lithuania",
+  "Title": "SOIC Lithuania",
+  "Description": "",
+  "Resources": [
+    {
+      "Name": "FlatGeobuf source",
+      "Style": "",
+      "TimeEntries": [
+        {
+          "Time": "2024-07",
+          "Assets": [
+            {
+              "Identifier": "parcels 2024-07",
+              "File": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Laukai_20240701_IND_EURO_perparc_2024nov27_oldfilednames_dots.fgb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
