@@ -3,7 +3,7 @@
   "Title": "SOIC Lithuania",
   "Description": "",
   "Resources": [
-    {
+    { 
       "Name": "FlatGeobuf source",
       "Style": "https://api.npoint.io/a9b7df0f3018aa2d6fab",
       "TimeEntries": [
@@ -16,6 +16,12 @@
             }
           ]
         }
+      ],
+      "OverwriteBBox": [
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
       ]
     }
   ]
