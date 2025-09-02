@@ -8,6 +8,7 @@
   "BaseLayers": [],
   "OverlayLayers": [],
   "CollectionGroup": "",
+  "Bbox": [22.64524, 54.94676, 23.02416, 55.30585],
   "Process": {
     "Name": "",
     "JsonForm": "",
@@ -22,16 +23,6 @@
         "Body": "",
         "Flatstyle": ""
       }
-    ]
-  },
-  "MapProjection": {
-    "name": "",
-    "def": "",
-    "extent": [
-      "",
-      "",
-      "",
-      ""
     ]
   }
 }
