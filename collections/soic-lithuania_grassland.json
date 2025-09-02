@@ -1,0 +1,28 @@
+{
+  "Name": "soic_lithuania_grass",
+  "Title": "SOIC Lithuania Grassland Types",
+  "Description": "",
+  "Resources": [
+    { 
+      "Name": "FlatGeobuf source",
+      "Style": "https://api.npoint.io/a9b7df0f3018aa2d6fab",
+      "TimeEntries": [
+        {
+          "Time": "2024",
+          "Assets": [
+            {
+              "Identifier": "02",
+              "File": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Laukai_20240701_IND_EURO_perparc_2024nov27_oldfilednames_dots_4326.fgb"
+            }
+          ]
+        }
+      ],
+      "Bbox": [
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
+      ]
+    }
+  ]
+}
