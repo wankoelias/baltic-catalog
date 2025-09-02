@@ -3,26 +3,10 @@
   "Title": "",
   "EodashIdentifier": "",
   "Description": "",
-  "Collections": [],
+  "Collections": ["soic_lithuania"],
   "Disable": [],
   "BaseLayers": [],
   "OverlayLayers": [],
   "CollectionGroup": "",
   "Bbox": [22.64524, 54.94676, 23.02416, 55.30585],
-  "Process": {
-    "Name": "",
-    "JsonForm": "",
-    "VegaDefinition": "",
-    "EndPoints": [
-      {
-        "Identifier": "",
-        "Url": "",
-        "Type": "application/geo+json",
-        "EndPoint": "",
-        "Method": "GET",
-        "Body": "",
-        "Flatstyle": ""
-      }
-    ]
-  }
 }
