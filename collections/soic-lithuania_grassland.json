@@ -4,7 +4,7 @@
   "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt.json/description.md",
   "Colorlegend": {
     "title": "Grassland Type",
-    "range": ["#A8D08D", "#7A9B43", "#4F6A26", "#D6B84E", "#6D7F30"],
+    "range": ["#43724f", "#48966f", "#53cd57", "#e2e19d", "#f0d1ae"],
     "domain": [
       "Conservation of Praying Mantis habitats in natural and semi-natural meadows",
       "Extensive management of perennial meadows with livestock grazing",
