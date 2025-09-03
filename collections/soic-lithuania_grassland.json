@@ -13,7 +13,7 @@
       "Management of natural meadows, wetlands and habitats of EC importance"
     ],
     "scaleType": "categorical",
-    "markType": "circle"
+    "markType": "line"
   },
   "Resources": [
     {
