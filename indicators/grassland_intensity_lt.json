@@ -1,0 +1,12 @@
+{
+  "Name": "grassland_intensity_lt",
+  "Title": "",
+  "EodashIdentifier": "",
+  "Description": "",
+  "Collections": ["soc_lithuania_grass"],
+  "Disable": [],
+  "BaseLayers": [],
+  "OverlayLayers": [],
+  "CollectionGroup": "",
+  "Bbox": [22.64524, 54.94676, 23.02416, 55.30585]
+}
