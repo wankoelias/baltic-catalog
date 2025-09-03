@@ -11,7 +11,7 @@
         "range": ["#A8D08D", "#7A9B43", "#4F6A26", "#D6B84E", "#6D7F30"],
         "domain": ["MNP", "EPG", "EPT", "SPT", "EBB"],
         "scaleType": "categorical",
-        "markType": "circle"
+        "markType": "rectangle"
       },
       "TimeEntries": [
         {
