@@ -2,7 +2,7 @@
   "Name": "grassland_intensity_lt",
   "Title": "",
   "EodashIdentifier": "",
-  "Description": "",
+  "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt.json/description.md",
   "Collections": ["soc_lithuania_grass"],
   "Disable": [],
   "BaseLayers": [],
