@@ -2,17 +2,17 @@
   "Name": "soc_lithuania_grass",
   "Title": "Lithuania High species rich permanent grassland - Intensity of management",
   "Description": "",
+  "Colorlegend": {
+    "title": "Grassland Type",
+    "range": ["#A8D08D", "#7A9B43", "#4F6A26", "#D6B84E", "#6D7F30"],
+    "domain": ["MNP", "EPG", "EPT", "SPT", "EBB"],
+    "scaleType": "categorical",
+    "markType": "rectangle"
+  },
   "Resources": [
     {
       "Name": "FlatGeobuf source",
       "Style": "https://api.npoint.io/36fe8ea4407000e46ffb",
-      "Colorlegend": {
-        "title": "Grassland Type",
-        "range": ["#A8D08D", "#7A9B43", "#4F6A26", "#D6B84E", "#6D7F30"],
-        "domain": ["MNP", "EPG", "EPT", "SPT", "EBB"],
-        "scaleType": "categorical",
-        "markType": "rectangle"
-      },
       "TimeEntries": [
         {
           "Time": "2024",
