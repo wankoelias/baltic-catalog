@@ -94,7 +94,7 @@ jobs:
           body: |
             🚀 Preview ready!
 
-            👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://esa-eodashboards.github.io/eodashboard-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/trilateral/catalog.json )
+            👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://baltic-gtif.github.io/baltic-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/baltic/catalog.json )
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
       -
