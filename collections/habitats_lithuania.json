@@ -3,13 +3,11 @@
   "Title": "Habitats Lithuania",
   "Description": "",
   "Colorlegend": {
-  "title": "Permanent Grassland Type",
-  "range": ["#000000"],
-  "domain": [
-    "test",
-  ],
-  "scaleType": "categorical",
-  "markType": "rect"
+    "title": "Permanent Grassland Type",
+    "range": ["#000000"],
+    "domain": ["test"],
+    "scaleType": "categorical",
+    "markType": "rect"
   },
   "Resources": [
     {
@@ -26,12 +24,7 @@
           ]
         }
       ],
-      "Bbox": [
-        21.3124, 
-        55.2919, 
-        21.6973, 
-        55.4418
-      ]
+      "Bbox": [21.3124, 55.2919, 21.6973, 55.4418]
     }
   ]
 }
