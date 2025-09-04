@@ -4,7 +4,7 @@
   "Description": "",
   "Colorlegend": {
     "title": "Permanent Grassland Type",
-    "range": ["#156064", "#00C49A", "#F3C969", "#75485E", "#755C1B"],
+    "range": ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0"],
     "domain": [
       "MNP",
       "EPG",
