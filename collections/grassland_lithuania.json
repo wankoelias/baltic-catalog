@@ -1,7 +1,7 @@
 {
   "Name": "grassland_lithuania",
-  "Title": "Species-Rich Grassland Management Lithuania",
-  "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt.json/description.md",
+  "Title": "_grassland_lithuania",
+  "Description": "",
   "Colorlegend": {
     "title": "Permanent Grassland Type",
     "range": ["#156064", "#00C49A", "#F3C969", "#75485E", "#755C1B"],
