@@ -1,30 +1,41 @@
 {
   "Name": "habitats_lithuania",
-  "Title": "Habitats Lithuania",
+  "Title": "Habitatis - Lithuania",
   "Description": "",
   "Colorlegend": {
-    "title": "Permanent Grassland Type",
-    "range": ["#000000"],
-    "domain": ["test"],
+    "title": "Habitats",
+    "range": ["#156064", "#00C49A", "#F3C969", "#75485E", "#755C1B"],
+    "domain": [
+      "MNP",
+      "EPG",
+      "EPT",
+      "SPT",
+      "EBB"
+    ],
     "scaleType": "categorical",
     "markType": "rect"
   },
   "Resources": [
     {
       "Name": "FlatGeobuf source",
-      "Style": "https://api.npoint.io/92c327adb4e47d9bf6c9",
+      "Style": "https://api.npoint.io/36fe8ea4407000e46ffb",
       "TimeEntries": [
         {
           "Time": "2024",
           "Assets": [
             {
-              "Identifier": "ha01",
+              "Identifier": "002",
               "File": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/lt_habitats.fgb"
             }
           ]
         }
       ],
-      "Bbox": [21.3124, 55.2919, 21.6973, 55.4418]
+      "Bbox": [
+        21.3124, 
+        55.2919, 
+        21.6973, 
+        55.4418
+      ]
     }
   ]
 }
