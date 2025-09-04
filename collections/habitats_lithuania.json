@@ -1,0 +1,28 @@
+{
+  "Name": "habitats_lithuania",
+  "Title": "Habitats Lithuania",
+  "Description": "",
+  "Resources": [
+    {
+      "Name": "FlatGeobuf source",
+      "Style": "https://api.npoint.io/92c327adb4e47d9bf6c9",
+      "TimeEntries": [
+        {
+          "Time": "2024",
+          "Assets": [
+            {
+              "Identifier": "03",
+              "File": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/lt_habitats.fgb"
+            }
+          ]
+        }
+      ],
+      "Bbox": [
+        21.3124, 
+        55.2919, 
+        21.6973, 
+        55.4418
+      ]
+    }
+  ]
+}
