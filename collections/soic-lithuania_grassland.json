@@ -13,8 +13,7 @@
       "EBB"
     ],
     "scaleType": "categorical",
-    "markType": "line",
-    "cle-swatch-size": 30
+    "markType": "rect"
   },
   "Resources": [
     {
