@@ -2,6 +2,15 @@
   "Name": "habitats_lithuania",
   "Title": "Habitats Lithuania",
   "Description": "",
+  "Colorlegend": {
+  "title": "Permanent Grassland Type",
+  "range": ["#000000"],
+  "domain": [
+    "test",
+  ],
+  "scaleType": "categorical",
+  "markType": "rect"
+  },
   "Resources": [
     {
       "Name": "FlatGeobuf source",
