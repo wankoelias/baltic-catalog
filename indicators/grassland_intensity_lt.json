@@ -3,16 +3,14 @@
   "Title": "Species-Rich Grassland Management Lithuania",
   "EodashIdentifier": "grassland_intensity_lt",
   "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt.json/description.md",
-  "Collections": ["grassland_lithuania", "habitats_lithuania"],
-  "Disable": [],
+  "Collections": [
+    "grassland_lithuania",
+    "habitats_lithuania"
+  ],
+  "Disable": [
+    "habitats_lithuania"
+  ],
   "BaseLayers": [],
   "OverlayLayers": [],
-  "CollectionGroup": "",
-  "Bbox": [
-    21.3124, 
-    55.2919, 
-    21.6973, 
-    55.4418
-  ],
-  "Image": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/thumbnails/dummy.png"
+  "CollectionGroup": ""
 }
