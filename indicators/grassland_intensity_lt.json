@@ -2,7 +2,7 @@
   "Name": "grassland_intensity_lt",
   "Title": "Species-Rich Grassland Management Lithuania",
   "EodashIdentifier": "grassland_intensity_lt",
-  "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt.json/description.md",
+  "Description": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/indicators/grassland_intensity_lt/description.md",
   "Collections": [
     "grassland_lithuania",
     "habitats_lithuania"
