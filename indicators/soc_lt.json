@@ -3,7 +3,7 @@
   "Title": "SOC Lithuania",
   "EodashIdentifier": "",
   "Description": "",
-  "Collections": ["soc_lithuania"],
+  "Collections": ["soc_lithuania_gsa"],
   "Disable": [],
   "BaseLayers": [],
   "OverlayLayers": [],
