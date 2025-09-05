@@ -15,7 +15,7 @@
   "Resources": [
     {
       "Name": "FlatGeobuf source",
-      "Style": "https://api.npoint.io/92c327adb4e47d9bf6c9",
+      "Style": "collections/habitats_lithuania/style.json",
       "TimeEntries": [
         {
           "Time": "2024",
