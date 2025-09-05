@@ -19,7 +19,7 @@
   "Resources": [
     {
       "Name": "FlatGeobuf source",
-      "Style": "collections/grassland_lithuania/style.json",
+      "Style": "https://api.npoint.io/36fe8ea4407000e46ffb",
       "TimeEntries": [
         {
           "Time": "2024",
