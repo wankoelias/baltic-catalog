@@ -1,9 +1,9 @@
 {
   "Name": "grassland_lithuania",
-  "Title": "Permanent Grassland Type - Lithuania",
+  "Title": "Permanent Grassland in CAP - Lithuania",
   "Description": "",
   "Colorlegend": {
-    "title": "Permanent Grassland Type",
+    "title": "Natural Grassland Type",
     "range": ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0"],
     "domain": [
       "MNP",
