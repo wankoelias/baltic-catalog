@@ -1,7 +1,7 @@
 {
   "Name": "soc_lithuania_gsa",
   "Title": "SOC Lithuania - Parcels",
-  "Image": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/thumbnails/soc_lt.png",
+  "Image": "thumbnails/soc_lt.png",
   "Description": "",
   "Resources": [
     { 
