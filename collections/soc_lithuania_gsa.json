@@ -6,7 +6,7 @@
   "Resources": [
     { 
       "Name": "FlatGeobuf source",
-      "Style": "soc_lithuania/style.json",
+      "Style": "collections/soc_lithuania/style.json",
       "TimeEntries": [
         {
           "Time": "2024",
