@@ -1,7 +1,7 @@
 {
   "Name": "habitats_lithuania",
   "Title": "Habitats - Lithuania",
-  "Image": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/thumbnails/grassland_lt.png",
+  "Image": "thumbnails/grassland_lt.png",
   "Description": "",
     "Colorlegend": {
     "title": "Permanent Grassland Type",
