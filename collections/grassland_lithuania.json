@@ -19,7 +19,7 @@
   "Resources": [
     {
       "Name": "FlatGeobuf source",
-      "Style": collections/grassland_lithuania/style.json",
+      "Style": "collections/grassland_lithuania/style.json",
       "TimeEntries": [
         {
           "Time": "2024",
