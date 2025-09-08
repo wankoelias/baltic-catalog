@@ -1,21 +1,12 @@
-# catalog-template
-Template for creating eodash catalog repository.
+# eodash catalog for GTIF-Baltics
 
-## How-to
-You can create a new repository using the "use this template" button.
-This will set-up a catalog repository for you with example configuration files as well as a github workflow that will automatically build and deploy the STAC catalog to the gh-page branch.
-For every commit you push to the main branch the catalog will be regenerated and deployed there.
+This repository is modified through pull requests submitted by the EOxHub Workspaces [data editor](https://documentation.hub.eox.at/data-editor/) within the **[baltic workspace](https://workspace.baltic-gtif.hub-otc.eox.at/)**.
 
-Please consider! This deployment strategy is intended for reasonable sized catalogs, if a catalog gets larger a more robust strategy should be implemented, changing the current github action, for example deploying the build to an s3 bucket.
 
-To make the build catalog available through github pages, please go to:
- * repository settings
-   - Pages (left side panel)
-     - Source: "Deploy from branch" (should be selected)
-     - Branch: Select "gh-pages" from dropdown
-     - (leave root selected)
-     - Click on save
+VIEW Catalog in the [STAC browser](https://radiantearth.github.io/stac-browser/#/external/baltic-gtif.github.io/baltic-catalog/baltic/catalog.json?.language=en).
 
-Once enabled you can navigate to the catalog using:
+## Assets
+Configuration files like Style, JSONForm, VegaChart definitions, and thumbnails are stored in the [assets repository](https://github.com/baltic-gtif/assets/) and can be modified independently of the EOxHub workspace.
 
-https://\<organization\>.github.io/\<repository\>/\<catalog_name\>/catalog.json
+## Getting Started
+To get started with data submission, follow the [GeoJSON Tutorial](https://documentation.hub.eox.at/geojson-tutorial/) to add a vector dataset to the dashboard.
