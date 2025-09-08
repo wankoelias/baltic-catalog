@@ -1,8 +1,8 @@
 {
   "Name": "soc_lt",
-  "Title": "SOC Lithuania",
+  "Title": "Soil Organic Carbon (SOC) - Lithuania",
   "EodashIdentifier": "",
-  "Description": "",
+  "Description": "indicators/soc_lithuania/description.md",
   "Collections": ["soc_lithuania_gsa"],
   "Disable": [],
   "BaseLayers": [],
