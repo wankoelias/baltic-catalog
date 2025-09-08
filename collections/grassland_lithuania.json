@@ -1,0 +1,42 @@
+{
+  "Name": "grassland_lithuania",
+  "Title": "Permanent Grassland in CAP - Lithuania",
+  "Description": "",
+  "Image": "thumbnails/grassland_lt.png",
+  "Colorlegend": {
+    "title": "Natural Grassland Type",
+    "range": ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0"],
+    "domain": [
+      "MNP",
+      "EPG",
+      "EPT",
+      "SPT",
+      "EBB"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
+  "Resources": [
+    {
+      "Name": "FlatGeobuf source",
+      "Style": "collections/grassland_lithuania/style.json",
+      "TimeEntries": [
+        {
+          "Time": "2024",
+          "Assets": [
+            {
+              "Identifier": "02",
+              "File": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/lt_pg_gsa_habitats.fgb"
+            }
+          ]
+        }
+      ],
+      "Bbox": [
+        21.3124, 
+        55.2919, 
+        21.6973, 
+        55.4418
+      ]
+    }
+  ]
+}
