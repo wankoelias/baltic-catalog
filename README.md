@@ -11,6 +11,8 @@ Configuration files like Style, JSONForm, VegaChart definitions, and thumbnails 
 ## EOxHub Workspaces
 - [What is EOxHub](https://documentation.hub.eox.at/intro/)
 - [Getting Started with EOxHub Workspaces](https://documentation.hub.eox.at/getting-started/)
-- **Tutorial: [Publishing Data workflow](https://documentation.hub.eox.at/publishing-workflow-tutorial/)**
-- Tutorial: [Integrating GeoJSON dataset using Data Editor](https://documentation.hub.eox.at/publishing-workflow-tutorial/)
-- Tutorial: [Integrating WMTS dataset using Data Editor](https://documentation.hub.eox.at/wmts-tutorial/)
+
+### Tutorials
+- **[Publishing Data workflow](https://documentation.hub.eox.at/publishing-workflow-tutorial/)**
+- [Integrating GeoJSON dataset using Data Editor](https://documentation.hub.eox.at/publishing-workflow-tutorial/)
+- [Integrating WMTS dataset using Data Editor](https://documentation.hub.eox.at/wmts-tutorial/)
