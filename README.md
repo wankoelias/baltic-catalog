@@ -11,4 +11,4 @@ Configuration files like Style, JSONForm, VegaChart definitions, and thumbnails 
 ## EOxHub Workspaces
 - [What is EOxHub](https://documentation.hub.eox.at/intro/)
 - [Getting Started with EOxHub Workspaces](https://documentation.hub.eox.at/getting-started/)
-- To start off with data submission, follow the [GeoJSON Tutorial](https://documentation.hub.eox.at/geojson-tutorial/) to add a vector dataset to the dashboard.
+- Tutorial: [Publishing Data workflow](https://documentation.hub.eox.at/publishing-workflow-tutorial/)
