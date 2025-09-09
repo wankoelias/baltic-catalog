@@ -19,4 +19,4 @@ Configuration files like Style, JSONForm, VegaChart definitions, and thumbnails 
 
 ---
 
-[Baltic Workspace Service Desk](mailto:service+tenants-gtif-workspaces-baltic-gtif-request@sd.eox.at)
+[Contact Support](mailto:service+tenants-gtif-workspaces-baltic-gtif-request@sd.eox.at)
