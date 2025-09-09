@@ -1,6 +1,6 @@
 # eodash catalog for gtif-baltics
 
-This repository is modified through pull requests submitted by the EOxHub Workspaces [data editor](https://documentation.hub.eox.at/data-editor/) within the **[baltic workspace](https://workspace.baltic-gtif.hub-otc.eox.at/)**.
+This repository is modified through pull requests submitted by the EOxHub Workspaces [data editor](https://documentation.hub.eox.at/data-editor/) within the baltic workspace at **[workspace.baltic-gtif.hub-otc.eox.at/](https://workspace.baltic-gtif.hub-otc.eox.at/)**.
 
 
 View Catalog in the [STAC browser](https://radiantearth.github.io/stac-browser/#/external/baltic-gtif.github.io/baltic-catalog/baltic/catalog.json?.language=en).
