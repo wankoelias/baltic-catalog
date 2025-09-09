@@ -16,3 +16,7 @@ Configuration files like Style, JSONForm, VegaChart definitions, and thumbnails 
 - **[Publishing Data workflow](https://documentation.hub.eox.at/publishing-workflow-tutorial/)**
 - [Integrating GeoJSON dataset using Data Editor](https://documentation.hub.eox.at/publishing-workflow-tutorial/)
 - [Integrating WMTS dataset using Data Editor](https://documentation.hub.eox.at/wmts-tutorial/)
+
+---
+
+[Baltic Workspace Service Desk](service+tenants-gtif-workspaces-baltic-gtif-request@sd.eox.at)
