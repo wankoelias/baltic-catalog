@@ -2,6 +2,7 @@
   "Name": "sm_lit_lat_est_2025_05_parcels_wms_high",
   "Title": "High Waterlogging - parcels",
   "Description": "",
+  "Image": "thumbnails/sm_lt.png",
   "Resources": [
     {
       "Name": "WMS",
