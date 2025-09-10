@@ -1,0 +1,32 @@
+{
+  "Name": "sm_lit_lat_est_2025_05_parcels_wms_high",
+  "Title": "High Waterlogging - parcels",
+  "Description": "",
+  "Image": "thumbnails/sm_lt.png",
+  "Resources": [
+    {
+      "Name": "WMS",
+      "EndPoint": "https://server1.landimage.info/geoserver/wms",
+      "LayerId": "GTIFBaltic:LIT_LAT_EST_SM_2025_05_21_Q1",
+      "Type": "OverwriteTimes",
+      "Version": "1.1.1",
+      "TileSize": 256,
+      "DateTimeInterval": {
+        "Start": "2025-05-21T00:00:00Z",
+        "End": "2025-06-01:00:00Z",
+        "Timedelta": {
+          "days": 10
+        }
+      },
+      "DataProjection": {
+        "name": "EPSG:3857"
+      },
+      "OverwriteBBox": [
+        20.649702939879514,
+        53.34689026629309,
+        28.816971956629423,
+        60.451750305254386
+      ]
+    }
+  ]
+}
