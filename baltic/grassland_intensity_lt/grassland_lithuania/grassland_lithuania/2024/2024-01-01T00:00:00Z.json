@@ -1,0 +1,80 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2024-01-01T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          21.3124,
+          55.2919
+        ],
+        [
+          21.6973,
+          55.2919
+        ],
+        [
+          21.6973,
+          55.4418
+        ],
+        [
+          21.3124,
+          55.4418
+        ],
+        [
+          21.3124,
+          55.2919
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    21.3124,
+    55.2919,
+    21.6973,
+    55.4418
+  ],
+  "properties": {
+    "datetime": "2024-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//collections/grassland_lithuania/style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "02"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Permanent Grassland in CAP - Lithuania"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Permanent Grassland in CAP - Lithuania"
+    }
+  ],
+  "assets": {
+    "02": {
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/PG/lt_pg_gsa_habitats.fgb",
+      "type": "application/vnd.flatgeobuf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "grassland_lithuania"
+}

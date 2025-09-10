@@ -1,0 +1,76 @@
+{
+  "type": "Collection",
+  "id": "soc_lt",
+  "stac_version": "1.1.0",
+  "description": "# Soil Organic Carbon (SOC) - Lithuania\nDue to the large root surface and microbial activity, Natural Permanent Grasslands (PG) acts as organic carbon sinks. The intensity and nature of mowing events and livestock grazing critically influence grassland SOC levels. Intensive grazing can lead to significant C losses, while rotational, adaptive grazing can promote plant growth and improve carbon capture and storage in grasslands.\n\n# Data Sources:\n- **Global Soil Organic Carbon content and Sequestration Potential Map (GSOCseq) V1.0.0**: Estimation of topsoil (0-30 cm) soil organic carbon sequestration potential in agricultural areas following a Business as Usual (BAU) scenario, Global Soil Information System of the FAO\n- **PG parcels** are from open governmental IACS GSA data (2024), managed by the National Paying Agency of Lithuania (NMA)\n- **Sentinel-2 cloudless 2024** by EOX IT Services GmbH is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. The required attribution including the given links is: \"Sentinel-2 cloudless - [https://s2maps.eu](https://s2maps.eu) by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)\"\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./soc_lithuania_gsa/collection.json",
+      "type": "application/json",
+      "title": "SOC Lithuania - Parcels",
+      "endpointtype": "FlatGeobuf source",
+      "id": "soc_lithuania_gsa"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer"
+      ],
+      "id": "cloudless-2024"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    }
+  ],
+  "title": "Soil Organic Carbon (SOC) - Lithuania",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          21.3124,
+          55.2919,
+          21.6973,
+          55.4418
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/soc_lt.png"
+    ]
+  }
+}

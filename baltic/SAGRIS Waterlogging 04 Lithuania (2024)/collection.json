@@ -96,13 +96,13 @@
     },
     {
       "rel": "xyz",
-      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpeg",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
-      "title": "EOxCloudless 2023",
+      "title": "EOxCloudless 2024",
       "roles": [
         "baselayer"
       ],
-      "id": "cloudless-2023"
+      "id": "cloudless-2024"
     },
     {
       "rel": "xyz",
@@ -152,8 +152,8 @@
   "license": "other",
   "summaries": {
     "subcode": [
-      "sm_lt_04_parcels_wms_high",
       "sm_lt_04_parcels_wms_medium",
+      "sm_lt_04_parcels_wms_high",
       "sm_lt_04_parcels_wms_low"
     ],
     "themes": [

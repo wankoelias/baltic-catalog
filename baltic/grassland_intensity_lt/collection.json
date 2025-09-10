@@ -1,0 +1,88 @@
+{
+  "type": "Collection",
+  "id": "grassland_intensity_lt",
+  "stac_version": "1.1.0",
+  "description": "# Lithuania High Species Rich Permanent Grassland - Intensity of Management\n\nNatural PGs are ecosystems, where implementation of usual practices consciously adjusted to the actual conditions is able to create a high biodiversity value in a relatively short time-frame. \n\nThe way PGs are maintained by machinery and grazing are serious limiting factors of the ecosystem health. Timing of any activity to be adjusted to climate conditions (wet/dry periods) is essential not to destroy certain vulnerable fauna and herbaceous flora. \n\nThe type and methods as machinery is used, must take into account further parcel specific risks, such as:\n- Invasive weed spread (due to existing seed content)\n- Type and moisture level of the soil\n- Natural seeding period of the advantageous species, etc.\n\nAll these factors serve the natural genetic renewal of the herbaceous species.\n\n\n## Types of Permanent Grassland\n\n- **MNP**: Conservation of Praying Mantis habitats in natural and semi-natural meadows\n- **EPG**: Extensive management of perennial meadows with livestock grazing\n- **EPT**: Extensive management of grasslands for livestock grazing\n- **SPT**: Management of specific meadows with grazing + late mowing\n- **EBB**: Management of natural meadows, wetlands, and habitats of EC importance\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./grassland_lithuania/collection.json",
+      "type": "application/json",
+      "title": "Permanent Grassland in CAP - Lithuania",
+      "endpointtype": "FlatGeobuf source",
+      "id": "grassland_lithuania"
+    },
+    {
+      "rel": "child",
+      "href": "./habitats_lithuania/collection.json",
+      "type": "application/json",
+      "title": "Habitats - Lithuania",
+      "endpointtype": "FlatGeobuf source",
+      "id": "habitats_lithuania",
+      "roles": [
+        "disable"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer"
+      ],
+      "id": "cloudless-2024"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    }
+  ],
+  "subcode": "grassland_intensity_lt",
+  "title": "Species-Rich Grassland Management Lithuania",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          21.3124,
+          55.2919,
+          21.6973,
+          55.4418
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
+    ]
+  }
+}

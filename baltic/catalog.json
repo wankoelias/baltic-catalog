@@ -74,6 +74,28 @@
       }
     },
     {
+      "rel": "child",
+      "href": "./soc_lt/collection.json",
+      "type": "application/json",
+      "title": "Soil Organic Carbon (SOC) - Lithuania",
+      "id": "soc_lt",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/soc_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./grassland_intensity_lt/collection.json",
+      "type": "application/json",
+      "title": "Species-Rich Grassland Management Lithuania",
+      "code": "grassland_intensity_lt",
+      "id": "grassland_intensity_lt",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
+      ],
+      "subcode": "grassland_intensity_lt"
+    },
+    {
       "rel": "self",
       "href": "https://baltic-gtif.github.io/baltic-gtif/baltic-catalog/catalog.json",
       "type": "application/json"
