@@ -16,6 +16,9 @@
         "Timedelta": {
           "days": 10
         }
+      },
+      "DataProjection": {
+        "name": "3857"
       }
     }
   ]
