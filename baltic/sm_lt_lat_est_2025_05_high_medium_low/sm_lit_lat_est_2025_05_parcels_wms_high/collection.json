@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "sm_lit_lat_est_2025_05_parcels_wms_high",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./sm_lit_lat_est_2025_05_parcels_wms_high/2025/2025-05-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sm_lit_lat_est_2025_05_parcels_wms_high/2025/2025-05-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-05-31T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/wms",
+      "type": "image/jpeg",
+      "title": "sm_lit_lat_est_2025_05_parcels_wms_high",
+      "wms:layers": [
+        "GTIFBaltic:LIT_LAT_EST_SM_2025_05_21_Q1"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging 05 Baltic States (2025)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+  "eodash:proj4_def": {
+    "name": "EPSG:3857"
+  },
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "High Waterlogging - parcels",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.649702939879514,
+          53.34689026629309,
+          28.816971956629423,
+          60.451750305254386
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-05-21T00:00:00Z",
+          "2025-05-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
