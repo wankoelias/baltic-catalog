@@ -2,7 +2,7 @@
   "Name": "soc_lithuania_gsa",
   "Title": "SOC Lithuania - Parcels",
   "Image": "thumbnails/soc_lt.png",
-  "Description": "",
+  "Description": " ",
   "Resources": [
     { 
       "Name": "FlatGeobuf source",
