@@ -1,0 +1,57 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.1.0/schema.json"
+  ],
+  "id": "2025-06-16T00:00:00Z",
+  "geometry": null,
+  "properties": {
+    "datetime": "2025-06-16T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/wms",
+      "type": "image/jpeg",
+      "title": "Medium Waterlogging - parcels",
+      "wms:layers": [
+        "GTIFBaltic:GER_SM_2025_06_11_Q2"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2025-06-16T00:00:00Z"
+      },
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging mid-June Poland (2025)"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging mid-June Poland (2025)"
+    }
+  ],
+  "assets": {},
+  "collection": "Medium Waterlogging - parcels",
+  "eodash:proj4_def": {
+    "name": "EPSG:3857"
+  }
+}

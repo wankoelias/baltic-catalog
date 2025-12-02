@@ -112,6 +112,19 @@
       }
     },
     {
+      "rel": "child",
+      "href": "./Medium Waterlogging - parcels/collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging mid-June Poland (2025)",
+      "id": "Medium Waterlogging - parcels",
+      "themes": [
+        "Flooding"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+      ]
+    },
+    {
       "rel": "self",
       "href": "https://baltic-gtif.github.io/baltic-gtif/baltic-catalog/catalog.json",
       "type": "application/json"

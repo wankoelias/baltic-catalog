@@ -1,0 +1,180 @@
+{
+  "type": "Collection",
+  "id": "Medium Waterlogging - parcels",
+  "stac_version": "1.1.0",
+  "description": "## Waterlogging\n\nSAGRIS Waterlogging Index was developed at Geomatrix UAB (Lithuania) for detection and mapping of\nhigh soil moisture in low-vegetation and bare soil areas – presumably, regular seasonal floods and\noccasional hazardous summer-time floods affecting agriculture. SAGRIS Waterlogging Index is computed\nfrom analysis-ready Sentinel-1 polarimetry SAR data, produced by SAGRIS software toolbox as\ncalibrated, orthorectified, flattened and cloud-optimised 16-bit raster datasets. Methodology is based on\nSAR polarisation ratio, combined with direct classification of back-scatter signal values, which allows\ndetection of a wide range of flooding conditions – from highly saturated soils to temporary water bodies\nstanding is agriculture fields. Combination of different computation methods allows detection of\nexcessive water both on bare soil and under the coverage of crops, unless vegetation is too massive for the\nC-band radar signal to penetrate (e.g. woody vegetation, corn fields, etc.). \n\n\nSAGRIS Waterlogging Index contains a combined set of polarisation ratios and coded values, which have the following practical\nmeanings:\n- 0–9: Low-to-moderate soil moisture (saturation), which poses no threat to heavy machinery, yet\npractical farming operations are likely to be disturbed when values reach above 5;\n- 10–50: High soil moisture (complete saturation) with water accumulating on soil surface below\nvegetation cover. Physical access to fields and routine farming activities are not possible;\n- 50–100: Partial flooding of fields with vegetation partially submerged. This is a hazardous\ncondition, potentially causing a substantial loss of crops;\n- 100–200: Complete flooding of fields with open water bodies and completely submerged\nvegetation. This is a force majeure condition, definitely causing a complete loss of crops and\ndisturbing further activities of the farming cycle, thus impacting the next year harvest.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-10T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/wms",
+      "type": "image/jpeg",
+      "title": "Medium Waterlogging - parcels",
+      "wms:layers": [
+        "GTIFBaltic:POL_SM_2025_06_11_Q2"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Medium Waterlogging - parcels/2025/2025-06-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-06-19T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/wms",
+      "type": "image/jpeg",
+      "title": "Medium Waterlogging - parcels",
+      "wms:layers": [
+        "GTIFBaltic:GER_SM_2025_06_11_Q2"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging mid-June Poland (2025)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+  "themes": [
+    "Flooding"
+  ],
+  "eox:colorlegend": {
+    "title": "Waterlogging",
+    "range": [
+      "#ffffff",
+      "#b8ebff",
+      "#88c3ff",
+      "#74abe2",
+      "#3281d1",
+      "#00509f"
+    ],
+    "markType": "rect",
+    "scaleType": "categorical",
+    "domain": [
+      0,
+      5,
+      10,
+      50,
+      100,
+      200
+    ]
+  },
+  "eodash:proj4_def": {
+    "name": "EPSG:3857"
+  },
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "SAGRIS Waterlogging mid-June Poland (2025)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          5.898902261229354,
+          47.010279644189765,
+          15.198515135322308,
+          55.31672997833105
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-06-10T00:00:00Z",
+          "2025-06-19T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
