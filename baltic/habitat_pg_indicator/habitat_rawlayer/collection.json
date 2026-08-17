@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "habitat_rawlayer",
+  "stac_version": "1.1.0",
+  "description": "# Lithuanian Permanent Grasslands and Their Habitats\n\nThis dataset combines Natural Permanent Grasslands (PGs) parcels  and habitats information\nThe combined data supports identification of areas with rich habitat types, with dominant parcel types helping to assess land-use pressures, ecological value, and opportunities for sustainable management.\n\n**Natural PG** are ecosystems in which well-adapted, context-appropriate **management practices** can create and maintain high biodiversity value within a relatively short time. \nThe way PGs are managed, whether through mowing or livestock grazing, has a major impact on overall ecosystem health. The timing of these activities is critical: operations must be adjusted to current climate and soil conditions (e.g., wet or dry periods) to avoid damaging vulnerable fauna and herbaceous plant communities.\n\n## Data Sources\n- **PG parcels** from the open governmental IACS GSA data, managed by the National Paying Agency of Lithuania (NMA).\n- **Habitat** data from publicly available Lithuanian datasets published in accordance with the INSPIRE Directive.\n- LULC map created based on the availability of the following sorted datasets:\n    **Habitat** (from Inspire LT ),\n    **Natura2000 sites** (from Inspire LT ),\n    **Small Woody Features**,\n    **CLC+ BackBone**\n\n## Legend description:\n- [GSA Codes description (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Code_description_Lithuania.pdf)\n- [LULC Category Codes (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/stack_vulnerability/LULC/Code_StackLULC.pdf)\n- [Ecosystem Connectivity Category - Action suggestions (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/ecosystem_connectivity/action_ecoConnectivity.pdf)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Biodiversity of Permanent Grassland [PG]"
+    }
+  ],
+  "endpointtype": "VectorTile source",
+  "title": "Habitat type",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.37351690406548,
+          53.71729184024658,
+          26.9521701367242,
+          56.31700190178251
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-12-31T00:00:00Z",
+          "2025-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

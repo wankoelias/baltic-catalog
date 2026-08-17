@@ -1,0 +1,188 @@
+{
+  "type": "Collection",
+  "id": "habitat_pg_indicator",
+  "stac_version": "1.1.0",
+  "description": "# Lithuanian Permanent Grasslands and Their Habitats\n\nThis dataset combines Natural Permanent Grasslands (PGs) parcels  and habitats information\nThe combined data supports identification of areas with rich habitat types, with dominant parcel types helping to assess land-use pressures, ecological value, and opportunities for sustainable management.\n\n**Natural PG** are ecosystems in which well-adapted, context-appropriate **management practices** can create and maintain high biodiversity value within a relatively short time. \nThe way PGs are managed, whether through mowing or livestock grazing, has a major impact on overall ecosystem health. The timing of these activities is critical: operations must be adjusted to current climate and soil conditions (e.g., wet or dry periods) to avoid damaging vulnerable fauna and herbaceous plant communities.\n\n## Data Sources\n- **PG parcels** from the open governmental IACS GSA data, managed by the National Paying Agency of Lithuania (NMA).\n- **Habitat** data from publicly available Lithuanian datasets published in accordance with the INSPIRE Directive.\n- LULC map created based on the availability of the following sorted datasets:\n    **Habitat** (from Inspire LT ),\n    **Natura2000 sites** (from Inspire LT ),\n    **Small Woody Features**,\n    **CLC+ BackBone**\n\n## Legend description:\n- [GSA Codes description (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/Code_description_Lithuania.pdf)\n- [LULC Category Codes (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/stack_vulnerability/LULC/Code_StackLULC.pdf)\n- [Ecosystem Connectivity Category - Action suggestions (PDF)](https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/ecosystem_connectivity/action_ecoConnectivity.pdf)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./LT_boundary_amd1/collection.json",
+      "type": "application/json",
+      "title": "Lithuania - Apskritys",
+      "endpointtype": "FlatGeobuf source",
+      "id": "LT_boundary_amd1"
+    },
+    {
+      "rel": "child",
+      "href": "./lt_stackLULC_gsa/collection.json",
+      "type": "application/json",
+      "title": "Land Cover Land Use - Parcels",
+      "endpointtype": "COG source",
+      "id": "lt_stackLULC_gsa",
+      "roles": [
+        "disable"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./lt_stackLULC/collection.json",
+      "type": "application/json",
+      "title": "Land Cover Land Use Map",
+      "endpointtype": "COG source",
+      "id": "lt_stackLULC",
+      "roles": [
+        "disable"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./habitat_rawlayer/collection.json",
+      "type": "application/json",
+      "title": "Habitat type",
+      "endpointtype": "VectorTile source",
+      "id": "habitat_rawlayer",
+      "roles": [
+        "disable"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./habitat/collection.json",
+      "type": "application/json",
+      "title": "PG LT - Habitat",
+      "endpointtype": "VectorTile source",
+      "id": "habitat",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./LTGSAONECTPG/collection.json",
+      "type": "application/json",
+      "title": "PG LT - Ecosystem Connectivity",
+      "endpointtype": "VectorTile source",
+      "id": "LTGSAONECTPG"
+    },
+    {
+      "rel": "service",
+      "href": "https://eoapi.workspace.baltic-gtif.hub-otc.eox.at/vector/collections/public.lt_{{year}}_habitat_pg/items?limit=10000&filter-lang=cql2-text&filter=S_INTERSECTS(geometry,POLYGON(({{bbox.0}}%20{{bbox.1}},{{bbox.2}}%20{{bbox.1}},{{bbox.2}}%20{{bbox.3}},{{bbox.0}}%20{{bbox.3}},{{bbox.0}}%20{{bbox.1}})))",
+      "type": "application/json",
+      "id": "timeseries",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Baselayer",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\\\"http://www.openstreetmap.org/copyright\\\" target=\\\"_blank\\\">OpenStreetMap</a> contributors and <a href=\\\"https://maps.eox.at/#data\\\" target=\\\"_blank\\\">others</a>, Rendering &copy; <a href=\\\"http://eox.at\\\" target=\\\"_blank\\\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    }
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//jsonforms/habitat.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//chartdefs/vega_chart_habitat.json",
+  "title": "Biodiversity of Permanent Grassland [PG]",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.37351690406548,
+          53.71729184024658,
+          26.9521701367242,
+          56.34132054833751
+        ],
+        [
+          20.37351690406548,
+          53.71729184024658,
+          26.9521701367242,
+          56.31700190178251
+        ],
+        [
+          20.489850779605074,
+          53.873106437403216,
+          26.903171787403263,
+          56.34132054833751
+        ],
+        [
+          20.489850779605074,
+          53.873106437403216,
+          26.903171787403263,
+          56.34132054833751
+        ],
+        [
+          20.37351690406548,
+          53.71729184024658,
+          26.9521701367242,
+          56.31700190178251
+        ],
+        [
+          21.228707166566753,
+          55.25151888701188,
+          21.457688260815036,
+          55.35223641266015
+        ],
+        [
+          20.489850779605074,
+          53.873106437403216,
+          26.903171787403263,
+          56.34132054833751
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-31T00:00:00Z",
+          "2025-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "thumbnail": [
+      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
+    ]
+  }
+}

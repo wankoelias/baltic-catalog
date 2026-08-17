@@ -1,8 +1,8 @@
 {
   "type": "Collection",
-  "id": "sm_lt_lat_est_2025_05_high_medium_low",
+  "id": "Lodging_07_Lithuania",
   "stac_version": "1.1.0",
-  "description": "## Waterlogging\n\nSAGRIS Waterlogging Index was developed at Geomatrix UAB (Lithuania) for detection and mapping of\nhigh soil moisture in low-vegetation and bare soil areas – presumably, regular seasonal floods and\noccasional hazardous summer-time floods affecting agriculture. SAGRIS Waterlogging Index is computed\nfrom analysis-ready Sentinel-1 polarimetry SAR data, produced by SAGRIS software toolbox as\ncalibrated, orthorectified, flattened and cloud-optimised 16-bit raster datasets. Methodology is based on\nSAR polarisation ratio, combined with direct classification of back-scatter signal values, which allows\ndetection of a wide range of flooding conditions – from highly saturated soils to temporary water bodies\nstanding is agriculture fields. Combination of different computation methods allows detection of\nexcessive water both on bare soil and under the coverage of crops, unless vegetation is too massive for the\nC-band radar signal to penetrate (e.g. woody vegetation, corn fields, etc.). \n\n\nSAGRIS Waterlogging Index contains a combined set of polarisation ratios and coded values, which have the following practical\nmeanings:\n- 0–9: Low-to-moderate soil moisture (saturation), which poses no threat to heavy machinery, yet\npractical farming operations are likely to be disturbed when values reach above 5;\n- 10–50: High soil moisture (complete saturation) with water accumulating on soil surface below\nvegetation cover. Physical access to fields and routine farming activities are not possible;\n- 50–100: Partial flooding of fields with vegetation partially submerged. This is a hazardous\ncondition, potentially causing a substantial loss of crops;\n- 100–200: Complete flooding of fields with open water bodies and completely submerged\nvegetation. This is a force majeure condition, definitely causing a complete loss of crops and\ndisturbing further activities of the farming cycle, thus impacting the next year harvest.\n",
+  "description": "## Crop lodging\n\nCrop lodging (i.e. intense bending or even dumping to the ground) is\ncaused by impacts of severe summer storms, grazing of wild animals or\nother mechanical forces damaging the structure of plants and changing\ntheir direction from vertical to horizontal. Most often crop lodging is\ncausing partial or complete loss of harvest. Crop lodging of cereals\n(wheat, rye, barley, oats) were detected in Lithuania during the period\nfrom June 25 till July 15, 2024, i.e. before the harvesting season when\nmost of lodging events take place, using Sentinel-1 polarimetry SAR data\npre-processed with SAGRIS production system (http://www.sagris.eu).\nVector map of cereal fields shows percentage of area impacted by crop\nlodging.\n",
   "links": [
     {
       "rel": "root",
@@ -12,14 +12,40 @@
     },
     {
       "rel": "child",
-      "href": "./sm_lit_lat_est_2025_05_parcels_wms_high/collection.json",
+      "href": "./Crops_Lodging_parcels/collection.json",
       "type": "application/json",
-      "title": "High Waterlogging - parcels",
+      "title": "Crops Lodging - parcels",
       "endpointtype": "WMS_OverwriteTimes",
-      "id": "sm_lit_lat_est_2025_05_parcels_wms_high",
+      "id": "Crops_Lodging_parcels",
+      "themes": [
+        "Crops Lodging"
+      ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/ld_lt.png"
       ]
+    },
+    {
+      "rel": "child",
+      "href": "./Crops_Lodging/collection.json",
+      "type": "application/json",
+      "title": "Crops Lodging",
+      "endpointtype": "COG source",
+      "id": "Crops_Lodging",
+      "themes": [
+        "Crops Lodging"
+      ],
+      "collection_group": "Crops",
+      "eodash:mapProjection": {
+        "name": "EPSG:3035",
+        "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
+      }
+    },
+    {
+      "rel": "service",
+      "href": "https://corsproxy.io/?url=https://server1.landimage.info/geoserver/wms?version=1.1.0&SERVICE=WFS&request=GetFeature&typeName=GTIFBaltic:LIT_2024_crops_lodging_07&srsName=EPSG:3857&outputFormat=application/json&bbox={{point.0}},{{point.1}},{{point.0}},{{point.1}},EPSG:3857",
+      "type": "application/json",
+      "id": "",
+      "method": "GET"
     },
     {
       "rel": "xyz",
@@ -68,31 +94,42 @@
     "name": "EPSG:3035",
     "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
   },
-  "title": "SAGRIS Waterlogging 05 Baltic States (2025)",
+  "eodash:jsonform": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/jsonforms/single_point.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main/chartdefs/vegachart_lodging.json",
+  "title": "Lodging Lithuania",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          20.649702939879514,
-          53.34689026629309,
-          28.816971956629423,
-          60.451750305254386
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
+        ],
+        [
+          22.64524,
+          54.94676,
+          23.02416,
+          55.30585
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-05-21T00:00:00Z",
-          "2025-05-31T00:00:00Z"
+          "2024-06-25T00:00:00Z",
+          "2024-07-15T00:00:00Z"
         ]
       ]
     }
   },
   "license": "other",
   "summaries": {
+    "themes": [
+      "Crops Lodging"
+    ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/ld_lt.png"
     ]
   }
 }

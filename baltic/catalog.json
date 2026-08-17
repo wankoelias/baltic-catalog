@@ -12,12 +12,10 @@
     },
     {
       "rel": "child",
-      "href": "./SAGRIS Waterlogging 04 Lithuania (2024)/collection.json",
+      "href": "./SAGRIS_Waterlogging_04_Lithuania_2024/collection.json",
       "type": "application/json",
       "title": "SAGRIS Waterlogging 04 Lithuania (2024)",
-      "code": "sm_lt_04_high_medium_low",
-      "id": "SAGRIS Waterlogging 04 Lithuania (2024)",
-      "subcode": "sm_lt_04_high_medium_low",
+      "id": "SAGRIS_Waterlogging_04_Lithuania_2024",
       "themes": [
         "Flooding"
       ],
@@ -28,7 +26,7 @@
         "Sensorname"
       ],
       "thumbnail": [
-        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+        "https://raw.githubusercontent.com/baltic-gtif/baltic-catalog/refs/heads/main/assets/sm_lt.png"
       ],
       "eodash:mapProjection": {
         "name": "EPSG:3035",
@@ -37,12 +35,10 @@
     },
     {
       "rel": "child",
-      "href": "./Lodging 07 Lithuania/collection.json",
+      "href": "./Lodging_07_Lithuania/collection.json",
       "type": "application/json",
-      "title": "Lodging 07 Lithuania",
-      "code": "ld_lt_07",
-      "id": "Lodging 07 Lithuania",
-      "subcode": "ld_lt_07",
+      "title": "Lodging Lithuania",
+      "id": "Lodging_07_Lithuania",
       "themes": [
         "Crops Lodging"
       ],
@@ -56,12 +52,10 @@
     },
     {
       "rel": "child",
-      "href": "./SAGRIS Waterlogging 09 Austria (2024)/collection.json",
+      "href": "./SAGRIS_Waterlogging_09_Austria_2024/collection.json",
       "type": "application/json",
       "title": "SAGRIS Waterlogging 09 Austria (2024)",
-      "code": "sm_at_09_high_medium_low",
-      "id": "SAGRIS Waterlogging 09 Austria (2024)",
-      "subcode": "sm_at_09_high_medium_low",
+      "id": "SAGRIS_Waterlogging_09_Austria_2024",
       "themes": [
         "Flooding"
       ],
@@ -75,37 +69,13 @@
     },
     {
       "rel": "child",
-      "href": "./soc_lt/collection.json",
-      "type": "application/json",
-      "title": "Soil Organic Carbon (SOC) - Lithuania",
-      "id": "soc_lt",
-      "thumbnail": [
-        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/soc_lt.png"
-      ]
-    },
-    {
-      "rel": "child",
-      "href": "./grassland_intensity_lt/collection.json",
-      "type": "application/json",
-      "title": "Species-Rich Grassland Management Lithuania",
-      "code": "grassland_intensity_lt",
-      "id": "grassland_intensity_lt",
-      "thumbnail": [
-        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
-      ],
-      "subcode": "grassland_intensity_lt"
-    },
-    {
-      "rel": "child",
       "href": "./sm_lt_lat_est_2025_05_high_medium_low/collection.json",
       "type": "application/json",
       "title": "SAGRIS Waterlogging 05 Baltic States (2025)",
-      "code": "sm_lit_lat_est_2025_05_high_medium_low",
       "id": "sm_lt_lat_est_2025_05_high_medium_low",
       "thumbnail": [
         "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
       ],
-      "subcode": "sm_lit_lat_est_2025_05_high_medium_low",
       "eodash:mapProjection": {
         "name": "EPSG:3035",
         "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
@@ -113,15 +83,119 @@
     },
     {
       "rel": "child",
-      "href": "./Medium Waterlogging - parcels/collection.json",
+      "href": "./Group25PGarable/collection.json",
+      "type": "application/json",
+      "title": "SOC of Permanent Grassland and Arable",
+      "id": "Group25PGarable",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/soc_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./habitat_pg_indicator/collection.json",
+      "type": "application/json",
+      "title": "Biodiversity of Permanent Grassland [PG]",
+      "id": "habitat_pg_indicator",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/grassland_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./GeomConversionPG/collection.json",
+      "type": "application/json",
+      "title": "Conversion of Permanent Grassland (Area of Loss and Gain)",
+      "id": "GeomConversionPG",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/lt_conversion_grassland.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./sm_pl_2025_06_parcels_wms_medium/collection.json",
       "type": "application/json",
       "title": "SAGRIS Waterlogging mid-June Poland (2025)",
-      "id": "Medium Waterlogging - parcels",
+      "id": "sm_pl_2025_06_parcels_wms_medium",
       "themes": [
         "Flooding"
       ],
       "thumbnail": [
         "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./sm_de_2025_06_parcels_wms_medium/collection.json",
+      "type": "application/json",
+      "title": "SAGRIS Waterlogging mid-June Germany (2025)",
+      "id": "sm_de_2025_06_parcels_wms_medium",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Vilnius_heat_map/collection.json",
+      "type": "application/json",
+      "title": "Vilnius Heat Trend",
+      "id": "Vilnius_heat_map",
+      "themes": [
+        "Sustainable cities"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./forest_lit_lat_est_2025_winter/collection.json",
+      "type": "application/json",
+      "title": "Forest Loss In Baltic States 2025 winter",
+      "id": "forest_lit_lat_est_2025_winter",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png"
+      ],
+      "eodash:mapProjection": "EPSG:3857"
+    },
+    {
+      "rel": "child",
+      "href": "./forest_lt_m05-09/collection.json",
+      "type": "application/json",
+      "title": "Forest Loss in Lithuania 2024 05-09",
+      "id": "forest_lt_m05-09",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Forest Loss in Poland (2024-06 - 2025-06) /collection.json",
+      "type": "application/json",
+      "title": "Forest Loss in Poland (2024-06 - 2025-06)",
+      "id": "Forest Loss in Poland (2024-06 - 2025-06) ",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png"
+      ],
+      "eodash:mapProjection": {
+        "name": "",
+        "def": "",
+        "extent": [
+          13.323205271117939,
+          48.08372833456975,
+          25.18572551492741,
+          55.149564275700854
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./Forest Loss in Germany (2024-06 - 2025-06) /collection.json",
+      "type": "application/json",
+      "title": "Forest Loss in Germany (2024-06 - 2025-06) ",
+      "id": "Forest Loss in Germany (2024-06 - 2025-06) ",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png"
       ]
     },
     {

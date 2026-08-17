@@ -1,0 +1,130 @@
+{
+  "type": "Collection",
+  "id": "Vilnius_heat_map",
+  "stac_version": "1.1.0",
+  "description": "Example of the Urban Heat Trend Monitoring service for the city of Vilnius in Lithuania.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./Vilnius_heat_map/collection.json",
+      "type": "application/json",
+      "title": "Vilnius Heat Trend",
+      "endpointtype": "COG source",
+      "id": "Vilnius_heat_map",
+      "themes": [
+        "Sustainable cities"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OpenStreetMap",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "OSM",
+      "attribution": " { OSM: Data &copy; <a href=\\\"http://www.openstreetmap.org/copyright\\\" target=\\\"_blank\\\">OpenStreetMap</a> contributors and <a href=\\\"https://maps.eox.at/#data\\\" target=\\\"_blank\\\">others</a>, Rendering &copy; <a href=\\\"http://eox.at\\\" target=\\\"_blank\\\">EOX</a> }"
+    },
+    {
+      "rel": "style",
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/Vilnius/Vilnius_superpixel_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "vilnius_smart_partitioning"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/Vilnius/Vilnius_boundary_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "Vilnius_boundary"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg",
+  "themes": [
+    "Sustainable cities"
+  ],
+  "eodash:merge_assets": false,
+  "title": "Vilnius Heat Trend",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.989100841571663,
+          54.470830082920855,
+          25.531948185484868,
+          54.86817195320784
+        ],
+        [
+          24.989100841571663,
+          54.470830082920855,
+          25.531948185484868,
+          54.86817195320784
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-01-27T00:00:00Z",
+          "2026-01-27T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "themes": [
+      "Sustainable cities"
+    ],
+    "thumbnail": [
+      "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "vilnius_smart_partitioning": {
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/Vilnius/Vilnius_superpixel_LST.geojson",
+      "type": "application/geo+json",
+      "title": "Smart partitioning",
+      "roles": [
+        "overlay",
+        "visible"
+      ]
+    },
+    "Vilnius_boundary": {
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/Vilnius/Vilnius_boundary.geojson",
+      "type": "application/geo+json",
+      "title": "Vilnius city borders",
+      "roles": [
+        "overlay",
+        "visible"
+      ]
+    }
+  }
+}

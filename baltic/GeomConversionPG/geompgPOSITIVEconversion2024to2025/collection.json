@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "geompgPOSITIVEconversion2024to2025",
+  "stac_version": "1.1.0",
+  "description": "# Conversion of Permanent Grassland - Lithuania\n\n\n## Data Sources & references:\nGlobal Soil Organic Carbon content and Sequestration Potential Maps (GSOCseq) V1.0.0: Estimation of Soil Organic Carbon content and of sequestration potential in agricultural areas under a Business as Usual (BAU) scenario and a Sustainable Soil Management scenarios Ref: FAO. 2022. Global Soil Organic Carbon Sequestration Potential Map – SOCseq v.1.1. Technical report. Rome - https://doi.org/10.4060/cb9002en\n\nAgricultural parcels are from open governmental IACS GSA data (2025), managed by the National Paying Agency of Lithuania (NMA).\n\nSentinel-2 cloudless by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)\" Ref: https://cloudless.eox.at/",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Conversion of Permanent Grassland (Area of Loss and Gain)"
+    }
+  ],
+  "endpointtype": "VectorTile source",
+  "title": "Permanent Grassland  - Area Gain ",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.489850779605074,
+          53.873106437403216,
+          26.903171787403263,
+          56.34132054833751
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-31T00:00:00Z",
+          "2024-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

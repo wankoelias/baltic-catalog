@@ -1,0 +1,126 @@
+{
+  "type": "Collection",
+  "id": "SAGRIS_Waterlogging_09_Austria_2024",
+  "stac_version": "1.1.0",
+  "description": "## Waterlogging\n\nSAGRIS Waterlogging Index was developed at Geomatrix UAB (Lithuania) for detection and mapping of\nhigh soil moisture in low-vegetation and bare soil areas – presumably, regular seasonal floods and\noccasional hazardous summer-time floods affecting agriculture. SAR Waterlogging Index is computed\nfrom analysis-ready Sentinel-1 polarimetry SAR data, produced by SAGRIS software toolbox as\ncalibrated, orthorectified, flattened and cloud-optimised 16-bit raster datasets. Methodology is based on\nSAR polarisation ratio, combined with direct classification of back-scatter signal values, which allows\ndetection of a wide range of flooding conditions – from highly saturated soils to temporary water bodies\nstanding is agriculture fields. Combination of different computation methods allows detection of\nexcessive water both on bare soil and under the coverage of crops, unless vegetation is too massive for the\nC-band radar signal to penetrate (e.g. woody vegetation, corn fields, etc.). \n\n\nSAGRIS Waterlogging Index contains a combined set of polarisation ratios and coded values, which have the following practical\nmeanings:\n- 0–9: Low-to-moderate soil moisture (saturation), which poses no threat to heavy machinery, yet\npractical farming operations are likely to be disturbed when values reach above 5;\n- 10–50: High soil moisture (complete saturation) with water accumulating on soil surface below\nvegetation cover. Physical access to fields and routine farming activities are not possible;\n- 50–100: Partial flooding of fields with vegetation partially submerged. This is a hazardous\ncondition, potentially causing a substantial loss of crops;\n- 100–200: Complete flooding of fields with open water bodies and completely submerged\nvegetation. This is a force majeure condition, definitely causing a complete loss of crops and\ndisturbing further activities of the farming cycle, thus impacting the next year harvest.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./Soil_Moisture_high_parcels/collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture high - parcels",
+      "endpointtype": "WMS_OverwriteTimes",
+      "id": "Soil_Moisture_high_parcels",
+      "themes": [
+        "Flooding"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_at.png"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Soil_Moisture_medium_parcels/collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture medium - parcels",
+      "endpointtype": "WMS_OverwriteTimes",
+      "id": "Soil_Moisture_medium_parcels",
+      "themes": [
+        "Flooding"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Soil_Moisture_low_parcels/collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture low - parcels",
+      "endpointtype": "WMS_OverwriteTimes",
+      "id": "Soil_Moisture_low_parcels",
+      "themes": [
+        "Flooding"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Baselayer",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\\\"http://www.openstreetmap.org/copyright\\\" target=\\\"_blank\\\">OpenStreetMap</a> contributors and <a href=\\\"https://maps.eox.at/#data\\\" target=\\\"_blank\\\">others</a>, Rendering &copy; <a href=\\\"http://eox.at\\\" target=\\\"_blank\\\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    }
+  ],
+  "eodash:mapProjection": {
+    "name": "EPSG:3035",
+    "def": "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs"
+  },
+  "title": "SAGRIS Waterlogging 09 Austria (2024)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.415283,
+          46.346928,
+          17.094727,
+          49.016257
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-09-01T00:00:00Z",
+          "2024-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "themes": [
+      "Flooding"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_at.png"
+    ]
+  }
+}

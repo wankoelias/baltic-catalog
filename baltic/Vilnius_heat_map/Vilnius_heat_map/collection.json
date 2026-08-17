@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "Vilnius_heat_map",
+  "stac_version": "1.1.0",
+  "description": "Example of the Urban Heat Trend Monitoring service for the city of Vilnius in Lithuania.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "style",
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/Vilnius/Vilnius_LST_mean_style.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Vilnius_LST mean"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Vilnius Heat Trend"
+    }
+  ],
+  "thumbnail": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg",
+  "themes": [
+    "Sustainable cities"
+  ],
+  "endpointtype": "COG source",
+  "title": "Vilnius Heat Trend",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.989100841571663,
+          54.470830082920855,
+          25.531948185484868,
+          54.86817195320784
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-01-27T00:00:00Z",
+          "2026-01-27T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/UHTM/iStock-1159485884.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

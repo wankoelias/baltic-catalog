@@ -1,0 +1,92 @@
+{
+  "type": "Collection",
+  "id": "CORINE 2018 Forest Boundaries",
+  "stac_version": "1.1.0",
+  "description": "## Tree cover loss\n\nTree cover loss maps is a forest loss monitoring tool built on Sentinel-1 SAR (Synthetic Aperture Radar) satellite data, processed through the SAGRIS production system (https://www.sagris.eu).\n<br>\nThe tool detects and maps tree cover loss across Poland. It captures all causes of forest loss, including natural tree death from old age, storm damage, forestry maintenance, and — most importantly — both legal and illegal timber harvesting.\n<br>\nThe algorithm uses SAR data. Unlike optical satellites (which are blocked by clouds), Sentinel-1 uses radar, meaning it can penetrate cloud cover and collect data year-round.\n<br>\nThe colored patches on the Forest Loss Coefficient map represent the Forest Loss Coefficient — coefficient values indicating tree loss per pixel, expressed as a percentage. Values are calculated for every pixel separately, ranging from 50% to 100% tree loss within that pixel.\n<br>\nThe colored circles on the Forest Loss Clear-cuts Points map represent the size of each clear-cut in hectares.<br>\nFor Poland specifically, forest loss is calculated only within areas classified as forest in the CORINE 2018 land cover dataset — meaning the analysis is bounded to officially mapped forest zones rather than any tree-covered area. The detection resolution is 100 m², making it far more sensitive than CORINE — however, CORINE forest boundaries are used as a coarse mask to define the analysis area.\nIn short, this is a near-real-time deforestation and forest disturbance early warning tool, capable of detecting small-scale changes across an entire region through all weather conditions.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/gwc/service/wms",
+      "type": "image/jpeg",
+      "title": "CORINE 2018 Forest Boundaries",
+      "wms:layers": [
+        "FROMSAT:POL_forest_p50_2024_06_minus_2025_06"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "key": "f6151087-7b29-431a-9efc-eaa6729deea0",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Forest Loss in Poland (2024-06 - 2025-06)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
+  "eox:colorlegend": {
+    "range": [
+      "#20d210"
+    ],
+    "domain": [
+      "Forest Boundary"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
+  "eodash:proj4_def": {
+    "name": "EPSG:3857"
+  },
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "CORINE 2018 Forest Boundaries",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          13.78253510560739,
+          48.81534508801565,
+          24.431939087501725,
+          55.0459431279403
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-06-01T00:00:00Z",
+          "2025-06-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

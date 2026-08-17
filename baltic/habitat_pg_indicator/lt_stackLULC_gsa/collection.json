@@ -1,0 +1,61 @@
+{
+  "type": "Collection",
+  "id": "lt_stackLULC_gsa",
+  "stac_version": "1.1.0",
+  "description": "Stack created based on the following datasets: GSA (from NPA), Habitat (from Inspire LT), Natura2000 sites, Small Woody Features and CLC+ BackBone",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "style",
+      "href": "https://workspace-ui-public.baltic-gtif.hub-otc.eox.at/api/public/share/public-4wazei3y-02/NCS/stack_vulnerability/LULC/style_syntheticID_stacked_datasets_LULC_gsa.json",
+      "type": "text/cog-styles",
+      "asset:keys": [
+        "Land Cover Land Use with Parcels"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Biodiversity of Permanent Grassland [PG]"
+    }
+  ],
+  "endpointtype": "COG source",
+  "title": "Land Cover Land Use - Parcels",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.489850779605074,
+          53.873106437403216,
+          26.903171787403263,
+          56.34132054833751
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-31T00:00:00Z",
+          "2025-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

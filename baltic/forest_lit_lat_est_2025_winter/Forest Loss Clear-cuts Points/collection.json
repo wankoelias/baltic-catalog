@@ -1,0 +1,105 @@
+{
+  "type": "Collection",
+  "id": "Forest Loss Clear-cuts Points",
+  "stac_version": "1.1.0",
+  "description": "## Tree cover loss\n\nTree cover loss maps is a forest loss monitoring tool built on Sentinel-1 SAR (Synthetic Aperture Radar) satellite data, processed through the SAGRIS production system (https://www.sagris.eu). <br>\n\nThe tool detects and maps tree cover loss across Lithuania. It captures all causes of forest loss, including natural tree death from old age, storm damage, forestry maintenance, and — most importantly — both legal and illegal timber harvesting. <br>\n\nThe algorithm uses SAR data. Unlike optical satellites (which are blocked by clouds), Sentinel-1 uses radar, meaning it can penetrate cloud cover and collect data year-round. This is particularly valuable in Lithuania, where persistent cloud cover would otherwise limit the effectiveness of conventional optical satellites. <br>\n\nThe tool provides monthly updates during the summer season, with an additional assessment covering the full summer period (May–September 2024). The datetime control lets users scrub through time to see how forest loss events developed across the 2024 season, making it easy to track the progression of tree loss month by month. <br>\n\nForest loss is displayed at the level of forestry taxation units — each unit shows the percentage of its area affected by tree loss. The minimum mapping unit is 100 m², meaning even small patches of forest loss are detectable, making this far more sensitive than many traditional monitoring systems. <br>\n\nIn short, this is a near-real-time deforestation and forest disturbance early warning tool, capable of detecting small-scale changes across an entire region through all weather conditions.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Baltic GTIF Catalog"
+    },
+    {
+      "rel": "wms",
+      "href": "https://server1.landimage.info/geoserver/gwc/service/wms",
+      "type": "image/jpeg",
+      "title": "Forest Loss Clear-cuts Points In 2025 Winter",
+      "wms:layers": [
+        "GTIFBaltic:LIT_LAT_EST_2025_forest_cuts_winter_pnt"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:tilesize": 256,
+      "wms:version": "1.1.1",
+      "key": "09df1bb7-e156-4757-98dd-d18f34eb6c85",
+      "eodash:proj4_def": {
+        "name": "EPSG:3857"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Forest Loss In Baltic States 2025 winter"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
+  "eox:colorlegend": {
+    "title": "Size of Clear-cuts (ha)",
+    "range": [
+      "#ffffb2",
+      "#fecc5c",
+      "#fd8d3c",
+      "#f03b20",
+      "#e31a1c",
+      "#bd0026",
+      "#800026"
+    ],
+    "domain": [
+      "0,1",
+      "0,5",
+      "1",
+      "2",
+      "3",
+      "4",
+      ">5"
+    ],
+    "scaleType": "categorical",
+    "markType": "circle"
+  },
+  "eodash:proj4_def": {
+    "name": "EPSG:3857"
+  },
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "Forest Loss Clear-cuts Points In 2025 Winter",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          20.347956765879132,
+          53.648407105421455,
+          28.52505380423799,
+          59.63927180494598
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-10-01T00:00:00Z",
+          "2025-04-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

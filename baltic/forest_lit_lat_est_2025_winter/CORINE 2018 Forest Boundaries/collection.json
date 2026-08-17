@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "sm_lit_lat_est_2025_05_parcels_wms_high",
+  "id": "CORINE 2018 Forest Boundaries",
   "stac_version": "1.1.0",
   "description": "",
   "links": [
@@ -12,18 +12,18 @@
     },
     {
       "rel": "wms",
-      "href": "https://server1.landimage.info/geoserver/wms",
+      "href": "https://server1.landimage.info/geoserver/gwc/service/wms",
       "type": "image/jpeg",
-      "title": "High Waterlogging - parcels",
+      "title": "CORINE 2018 Forest Boundaries",
       "wms:layers": [
-        "GTIFBaltic:LIT_LAT_EST_SM_2025_05_21_Q1"
+        "GTIFBaltic:CORINE_LIT_LAT_EST_2018_forests"
       ],
       "role": [
         "data"
       ],
       "wms:tilesize": 256,
       "wms:version": "1.1.1",
-      "key": "3192e6b4-a55d-4eeb-a5cc-8dca566804de",
+      "key": "8fd7064a-b05c-4d98-9828-633cda02c8fb",
       "eodash:proj4_def": {
         "name": "EPSG:3857"
       }
@@ -32,31 +32,41 @@
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "SAGRIS Waterlogging 05 Baltic States (2025)"
+      "title": "Forest Loss In Baltic States 2025 winter"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+  "thumbnail": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
+  "eox:colorlegend": {
+    "range": [
+      "#20d210"
+    ],
+    "domain": [
+      "Forest Boundary"
+    ],
+    "scaleType": "categorical",
+    "markType": "rect"
+  },
   "eodash:proj4_def": {
     "name": "EPSG:3857"
   },
   "endpointtype": "WMS_OverwriteTimes",
-  "title": "High Waterlogging - parcels",
+  "title": "CORINE 2018 Forest Boundaries",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          20.649702939879514,
-          53.34689026629309,
-          28.816971956629423,
-          60.451750305254386
+          20.82877877559398,
+          53.12261804761748,
+          28.743479238252885,
+          59.68051271667771
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-05-21T00:00:00Z",
-          "2025-05-31T00:00:00Z"
+          "2024-10-01T00:00:00Z",
+          "2025-04-30T00:00:00Z"
         ]
       ]
     }
@@ -72,7 +82,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/sm_lt.png",
+      "href": "https://raw.githubusercontent.com/baltic-gtif/assets/refs/heads/main//thumbnails/forest_lt.png",
       "type": "image/png",
       "roles": [
         "thumbnail"
